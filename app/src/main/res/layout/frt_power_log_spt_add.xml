@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_label_outline_grey600_48dp"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:text="1"
+            android:textColor="@color/grey_600"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey_300"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.geotdb.compile.view.MaterialEditTextMeter
+                android:id="@+id/edtBegin1"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_record_powerLog_begin"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/hint_record_powerLog_begin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_to_grey600_24dp"
+                android:gravity="center"
+                android:textColor="@color/grey_600"/>
+
+            <com.geotdb.compile.view.MaterialEditTextMeter
+                android:id="@+id/edtEnd1"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_record_powerLog_end"
+                android:phoneNumber="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_record_powerLog_end"/>
+
+            <com.geotdb.compile.view.MaterialEditTextInt
+                android:id="@+id/edtBlow1"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:hint="@string/hint_record_powerLog_blow"
+                android:phoneNumber="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_record_powerLog_blow"
+                app:met_iconLeft="@drawable/ic_fullscreen_grey600_24dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_label_outline_grey600_48dp"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:text="2"
+            android:textColor="@color/grey_600"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey_300"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.geotdb.compile.view.MaterialEditTextMeter
+                android:id="@+id/edtBegin2"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:hint="@string/hint_record_powerLog_begin"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/hint_record_powerLog_begin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_to_grey600_24dp"
+                android:gravity="center"
+                android:textColor="@color/grey_600"/>
+
+            <com.geotdb.compile.view.MaterialEditTextMeter
+                android:id="@+id/edtEnd2"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_record_powerLog_end"
+                android:phoneNumber="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_record_powerLog_end"/>
+
+            <com.geotdb.compile.view.MaterialEditTextInt
+                android:id="@+id/edtBlow2"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:hint="@string/hint_record_powerLog_blow"
+                android:phoneNumber="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_record_powerLog_blow"
+                app:met_iconLeft="@drawable/ic_fullscreen_grey600_24dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_label_outline_grey600_48dp"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:text="3"
+            android:textColor="@color/grey_600"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey_300"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.geotdb.compile.view.MaterialEditTextMeter
+                android:id="@+id/edtBegin3"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:hint="@string/hint_record_powerLog_begin"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/hint_record_powerLog_begin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_to_grey600_24dp"
+                android:gravity="center"
+                android:textColor="@color/grey_600"/>
+
+            <com.geotdb.compile.view.MaterialEditTextMeter
+                android:id="@+id/edtEnd3"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_record_powerLog_end"
+                android:phoneNumber="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_record_powerLog_end"/>
+
+            <com.geotdb.compile.view.MaterialEditTextInt
+                android:id="@+id/edtBlow3"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:hint="@string/hint_record_powerLog_blow"
+                android:phoneNumber="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_record_powerLog_blow"
+                app:met_iconLeft="@drawable/ic_fullscreen_grey600_24dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_label_outline_grey600_48dp"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:text="4"
+            android:textColor="@color/grey_600"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey_300"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.geotdb.compile.view.MaterialEditTextMeter
+                android:id="@+id/edtBegin4"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:hint="@string/hint_record_powerLog_begin"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/hint_record_powerLog_begin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_to_grey600_24dp"
+                android:gravity="center"
+                android:textColor="@color/grey_600"/>
+
+            <com.geotdb.compile.view.MaterialEditTextMeter
+                android:id="@+id/edtEnd4"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_record_powerLog_end"
+                android:phoneNumber="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_record_powerLog_end"/>
+
+            <com.geotdb.compile.view.MaterialEditTextInt
+                android:id="@+id/edtBlow4"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:hint="@string/hint_record_powerLog_blow"
+                android:phoneNumber="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_record_powerLog_blow"
+                app:met_iconLeft="@drawable/ic_fullscreen_grey600_24dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

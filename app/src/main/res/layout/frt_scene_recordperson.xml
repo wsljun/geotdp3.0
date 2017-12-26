@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.geotdb.compile.view.MaterialEditTextNoEmoji
+        android:id="@+id/person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="输入描述员姓名"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_person_name"
+        app:met_iconLeft="@drawable/ai_icon_commander" />
+</LinearLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HoleEditActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolAlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolAlt"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtCode_test"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_hole_code"
+                app:met_baseColor="@android:color/holo_red_light"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_hole_code"
+                app:met_iconLeft="@drawable/ai_icon_ktxl" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/relate_code"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="@string/label_hole_relate"
+                    android:visibility="gone"
+                    app:met_clearButton="false"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_hole_relate"
+                    app:met_iconLeft="@drawable/ai_icon_norelevance" />
+
+
+                <net.qiujuer.genius.ui.widget.Button
+                    android:id="@+id/doRelate"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/btn_base"
+                    android:text="点击获取勘探点列表"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.geotdb.compile.view.MaterialBetterSpinner
+                android:id="@+id/sprType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_hole_type"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_hole_type"
+                app:met_iconLeft="@drawable/ai_icon_kttype" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextElevation
+                    android:id="@+id/edtElevation"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="@string/hint_hole_elevation"
+                    android:phoneNumber="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_hole_elevation"
+                    app:met_iconLeft="@drawable/ai_icon_ktheight" />
+
+                <com.geotdb.compile.view.MaterialEditTextElevation
+                    android:id="@+id/edtDepth"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="@string/hint_hole_depth"
+                    android:phoneNumber="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_hole_depth"
+                    app:met_iconLeft="@drawable/ai_icon_ktkongshen" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hole_description_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/hole_description_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="14dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="技术要求"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/hole_description_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ai_icon_enter" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@android:color/darker_gray"></View>
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/hole_description_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:textSize="15sp"/>F
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/fltHoleSceneFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:visibility="gone" />
+
+            <net.qiujuer.genius.ui.widget.Button
+                android:id="@+id/btnLocation"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_base"
+                android:text="定位"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/lltLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtMapLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="@string/hint_hole_mapLatitude"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_hole_mapLatitude"
+                    app:met_iconLeft="@drawable/ai_icon_jzlatitude" />
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtMapLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="@string/hint_hole_mapLongitude"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_hole_mapLongitude"
+                    app:met_iconLeft="@drawable/ai_icon_jzlongitude" />
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtMapTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="@string/hint_hole_mapTime"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_hole_mapTime"
+                    app:met_iconLeft="@drawable/ai_icon_jztime" />
+
+                <com.geotdb.compile.view.MaterialEditTextMeter
+                    android:id="@+id/edtRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="@string/hint_hole_radius"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_hole_radius"
+                    app:met_iconLeft="@drawable/ai_icon_jsscope" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fltHoleLocationFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="@style/KeyboardViewBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+
+
+

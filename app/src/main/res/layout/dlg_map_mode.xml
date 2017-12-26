@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/dlg_map_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_list_tag_color">
+
+        <TextView
+            android:id="@+id/dlg_map_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高精度模式"
+            android:textColor="@color/met_floatingLabelTextColor"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dlg_map_tv1"
+            android:layout_toLeftOf="@+id/dlg_map_rb1"
+            android:layout_toStartOf="@+id/dlg_map_rb1"
+            android:text="这种定位模式下，会同时使用网络定位（基站、WIFI定位）和GPS定位，优先返回最高精度的定位结果"
+            android:textSize="17sp" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/dlg_map_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dlg_map_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/base_list_tag_color">
+
+        <TextView
+            android:id="@+id/dlg_map_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="低功耗模式"
+            android:textColor="@color/met_floatingLabelTextColor"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dlg_map_tv2"
+            android:layout_toLeftOf="@+id/dlg_map_rb2"
+            android:layout_toStartOf="@+id/dlg_map_rb2"
+            android:text="该定位模式下，不会使用GPS，只会使用网络定位（Wi-Fi和基站定位）"
+            android:textSize="17sp" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/dlg_map_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dlg_map_rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/base_list_tag_color">
+
+        <TextView
+            android:id="@+id/dlg_map_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仅设备模式"
+            android:textColor="@color/met_floatingLabelTextColor"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dlg_map_tv3"
+            android:layout_toLeftOf="@+id/dlg_map_rb3"
+            android:layout_toStartOf="@+id/dlg_map_rb3"
+            android:text="这种定位模式下，不需要连接网络，只使用GPS进行定位，这种模式下不支持室内环境的定位"
+            android:textSize="17sp" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/dlg_map_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:enabled="false" />
+    </RelativeLayout>
+
+</LinearLayout>

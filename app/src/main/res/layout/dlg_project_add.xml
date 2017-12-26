@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtSerialNumber"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_project_serialNumber"
+                android:phoneNumber="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_project_serialNumber"
+                app:met_primaryColor="@color/met_primaryColor"/>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btnTest"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:background="#1E88E5"
+                android:text="检验"/>
+        </LinearLayout>
+
+        <com.geotdb.compile.view.MaterialEditTextNoEmoji
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_project_fullName"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_project_fullName"
+            app:met_primaryColor="@color/met_primaryColor"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:orientation="horizontal">
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtCode"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="0.6"
+                android:hint="@string/hint_project_code"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_project_code"
+                app:met_primaryColor="@color/met_primaryColor"/>
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtLeader"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:hint="@string/hint_project_leader"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_project_leader"
+                app:met_primaryColor="@color/met_primaryColor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

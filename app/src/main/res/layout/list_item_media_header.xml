@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <!--<net.qiujuer.genius.ui.widget.Button-->
+    <!--android:id="@+id/btnMedia"-->
+    <!--android:layout_width="124dp"-->
+    <!--android:layout_height="124dp"-->
+    <!--android:background="@drawable/buttonstyle2"-->
+    <!--android:textColor="#1E88E5"-->
+    <!--app:gTouchColor="#601e88e5"-->
+    <!--app:gTouchEffect="ease" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:id="@+id/midia_header_tv"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="添加照片"-->
+    <!--android:textSize="14sp" />-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/btnMedia"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:cardCornerRadius="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/medialist_image">
+
+                <com.geotdb.compile.view.RoundAngleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/ivwPic_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/medialist_text"
+                android:padding="8dp">
+
+                <com.geotdb.compile.view.MarqueeTextView
+                    android:id="@+id/midia_header_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="添加照片"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/hole_text_size" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprYs"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_ys"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_ys"
+            app:met_iconLeft="@drawable/ai_icon_color" />
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprMsd"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_msd"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_msd"
+            app:met_iconLeft="@drawable/ai_icon_mishidu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprKlxz"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_klxz"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_klxz"
+            app:met_iconLeft="@drawable/ai_icon_klxingzhuang" />
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprKlpl"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_klpl"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_klpl"
+            app:met_iconLeft="@drawable/ai_icon_klpailie" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprYbljx"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_ybljx"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_ybljx"
+            app:met_iconLeft="@drawable/ai_icon_lijingsmall" />
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprYbljd"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_ybljd"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_ybljd"
+            app:met_iconLeft="@drawable/ai_icon_lijingsmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprJdljx"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_jdljx"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_jdljx"
+            app:met_iconLeft="@drawable/ai_icon_lijingcenter" />
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprJdljd"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_jdljd"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_jdljd"
+            app:met_iconLeft="@drawable/ai_icon_lijingcenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprZdlj"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_zdlj"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_zdlj"
+            app:met_iconLeft="@drawable/ai_icon_lijing" />
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprSd"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_sd"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_sd"
+            app:met_iconLeft="@drawable/ai_icon_shidu" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprFhcd"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_fhcd"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_fhcd"
+            app:met_iconLeft="@drawable/ai_icon_fenghua" />
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprKljp"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_kljp"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_kljp"
+            app:met_iconLeft="@drawable/ai_icon_kljipei" />
+    </LinearLayout>
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/sprMycf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_layer_mycf"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_layer_mycf"
+        app:met_iconLeft="@drawable/ai_icon_mychengfen" />
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/sprTcw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_layer_tcw"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_layer_tcw"
+        app:met_iconLeft="@drawable/ai_icon_chongtian" />
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/sprJc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_layer_jc"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_layer_jc"
+        app:met_iconLeft="@drawable/ai_icon_jiaceng" />
+
+</LinearLayout>

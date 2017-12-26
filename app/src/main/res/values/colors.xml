@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#FFF5F5F5</color>
+
+
+    <color name="md_material_gray_600">#3c000000</color>
+    <color name="md_material_gray_800">#64000000</color>
+
+    <color name="map_title_blue">#1E88E5</color>
+
+    <color name="divider_bg">#9aa7a7a7</color>
+
+    <!-- -->
+    <color name="met_baseColor">#e01e1e1e</color>
+    <color name="met_textColor">#a0020202</color>
+    <color name="met_primaryColor">#1582c6</color>
+    <color name="met_primaryColor2">#24b9e3</color>
+    <color name="met_floatingLabelTextColor">#f2000000
+    </color><!--Floating label 的字体颜色。默认为半透明的 baseColor.-->
+
+    <color name="met_underlineColor">#ffc3d7f1</color><!--底部横线颜色 -->
+
+
+    <color name="base_list_title_color">#ff2f2f2f</color>
+    <color name="base_list_desc_color">#ff808080</color>
+    <color name="base_list_tag_color">#ffffffff</color>
+
+    <color name="map_radius_fill">#971e88e5</color><!--圆内的填充色-->
+    <color name="map_stroke">#ff1e88e5</color><!--圆的边框  -->
+
+
+    <color name="header_toast_line">#50abdaf4</color>
+    <color name="nav_header_rl">#98F5FF</color>
+    <color name="offline_head_font">#FFFFFF</color>
+    <color name="gary">#898989</color>
+    <color name="offline_down_size">#777777</color>
+
+    <color name="transparent_black_85">#DA000000</color>
+
+    <item name="list_normal1" type="color">#d45f0e</item>
+    <item name="list_normal2" type="color">#df463b</item>
+    <item name="list_normal3" type="color">#0193e6</item>
+    <item name="list_normal4" type="color">#27958c</item>
+    <item name="list_normal5" type="color">#919090</item>
+    <item name="list_normal6" type="color">#00a762</item>
+    <item name="list_normal7" type="color">#764ba6</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/list_normal1</item>
+        <item>@color/list_normal2</item>
+        <item>@color/list_normal3</item>
+        <item>@color/list_normal4</item>
+        <item>@color/list_normal5</item>
+        <item>@color/list_normal6</item>
+        <item>@color/list_normal7</item>
+    </integer-array>
+
+    <color name="text_warning">#fe8f4d</color>
+
+</resources>

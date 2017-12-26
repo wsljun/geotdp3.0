@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/sprEarthType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_get_earthType"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_get_earthType"
+        app:met_iconLeft="@drawable/ai_icon_tuquite" />
+
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/sprMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_get_earthMode"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_get_earthMode"
+        app:met_iconLeft="@drawable/ai_icon_setup" />
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/sprTestType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_get_testType"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_get_testType"
+        app:met_iconLeft="@drawable/ai_icon_testcontent" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprYs"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_ys"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_ys"
+            app:met_iconLeft="@drawable/ai_icon_color" />
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprMsd"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_msd"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_msd"
+            app:met_iconLeft="@drawable/ai_icon_mishidu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprKlzc"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_klzc"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_klzc"
+            app:met_iconLeft="@drawable/ai_icon_kewax" />
+
+        <com.geotdb.compile.view.MaterialBetterSpinner
+            android:id="@+id/sprKx"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_record_layer_kx"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_layer_kx"
+            app:met_iconLeft="@drawable/ai_icon_fencengh" />
+    </LinearLayout>
+
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/sprCzjl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_layer_czjl"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_layer_czjl"
+        app:met_iconLeft="@drawable/ai_icon_czjieli" />
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/sprBhw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_layer_bhw"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_layer_bhw"
+        app:met_iconLeft="@drawable/ai_icon_goods" />
+</LinearLayout>

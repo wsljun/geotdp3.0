@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+	body{
+		font-family: "微软雅黑";
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		border: 1px solid #000;
+		margin-bottom: 10px;
+		text-align: center;
+		padding: 10px 0;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.one {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 750px;
+	}
+	table {
+		border: 1px solid #dddddd;
+		width: 100%;
+		max-width: 100%;
+		border-collapse: collapse;
+		margin-bottom: 10px;
+	}
+	table > thead > tr {
+	    color: #707070;
+	    font-weight: normal;
+	    background: #F2F2F2;
+	    background-image: -webkit-linear-gradient(top, #f8f8f8 0%, #ececec 100%);
+	    background-image: -o-linear-gradient(top, #f8f8f8 0%, #ececec 100%);
+	    background-image: linear-gradient(to bottom, #f8f8f8 0%, #ececec 100%);
+	    background-repeat: repeat-x;
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f8', endColorstr='#ffececec', GradientType=0);
+	}
+	table > thead > tr > th {
+    	font-weight: bold;
+    	border: 1px solid #dddddd;
+    	padding: 5px 10px;
+	}
+	table > tbody > tr > td {
+    	border: 1px solid #dddddd;
+    	text-align: center;
+    	padding: 5px 10px;
+    	font-size: 14px;
+	}
+	</style>
+</head>
+<body>
+	<div class="one">
+		<h2>水位记录编辑</h2>
+		<!--<ul class="one_a">-->
+			<!--<li><img src="images/12.jpg" alt=""></li>-->
+		<!--</ul>-->
+		<div class="one_b">
+		<h4>选择地下水类型</h4>
+			<h5>操作:</h5>
+			<p>点击该行，展开下拉菜单，选择滞水、潜水、承压水等类型。</p>
+		</div>
+		<div class="one_b">
+			<h5>知识:</h5>
+			<p>根据地下水的集聚赋存条件，可分为滞水、潜水、承压水等三种类型。
+潜水：地表以下不深的地带，地层局部地段存在隔水层，流经此处集聚的水。
+潜水：地面以下第一个稳定的隔水层以上的具有自由表面的地下水。
+承压水：埋藏在上下两个隔水层之间，承受一定压力的地下水，即为承压水
+</p>
+		</div>
+		<h4>初见水位</h4>
+		<div class="one_b">
+			<h5>操作:</h5>
+			<p>填写地下水初见水位，量测读数至厘米，精度不得低于±2cm。点击“更新”按键，获取量测水位的时间。</p>
+		</div>
+		<div class="one_b">
+			<h5>知识:</h5>
+			<p>勘探过程中，揭露地下水时立即量测的水位位置。</p>
+		</div>
+		<h4>稳定水位</h4>
+		<div class="one_b">
+			<h5>操作:</h5>
+			<p>填写地下水初见水位，量测读数至厘米，精度不得低于±2cm。点击“更新”按键，获取量测水位的时间。</p>
+		</div>
+		<div class="one_b">
+			<h5>知识:</h5>
+			<p>揭露地下水后，其水位在一定时间内会产生变化，然后趋于稳定，此时的地下水水位成为稳定水位。稳定水位应在初见水位后经一定的稳定时间后量测，稳定水位的间隔时间按地层的渗透性确定，对砂土和碎石土不得少于0.5h，对粉土和粘性土不得少于8h，并宜在勘察结束后统一量测稳定水位。
+记录编号：输入地下水位编号，当有多层地下水时，可按从上到下依次编号。
+添加照片：对水样进行拍照，亦可对取水勘探点、取水环境拍照，照片数量未做限定。
+纬度、经度、定位时间、偏移范围等均为GPS信息。
+记录编号可自行填写，本软件水位记录编号默认SW-001、SW-002、SW-003、…、SW-n，自动追加记录编号。
+点击“添加照片”，进入拍照，拍照内容为取水、水样等情况，照片数量未做限制。
+点击右上角“√”，保存该条记录并返回上级界面；点击左上角“×”，放弃该条记录并返回上级界面。
+</p>
+		</div>
+	</div>
+			
+</body>
+</html>

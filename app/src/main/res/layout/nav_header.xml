@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nav_header_background"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <ImageView
+        android:id="@+id/btnLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Drawer_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="57624520@qq.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/Drawer_realname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Drawer_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="曹健"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/Drawer_realname"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white" />
+
+
+    <RelativeLayout
+        android:id="@+id/drawer_project"
+        android:layout_width="88dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="@dimen/lay_8"
+        android:layout_marginRight="@dimen/lay_4"
+        android:layout_marginTop="14dp"
+        android:background="@color/header_toast_line">
+
+        <ImageView
+            android:id="@+id/drawer_project_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ai_icon_allproject" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawer_project_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="所有项目"
+            android:textColor="@color/white_alpha_224"
+            android:textSize="10sp" />w
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/drawer_msg"
+        android:layout_width="88dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/drawer_project"
+        android:layout_marginLeft="@dimen/lay_4"
+        android:layout_marginRight="@dimen/lay_4"
+        android:layout_toEndOf="@+id/drawer_project"
+        android:background="@color/header_toast_line">
+
+        <ImageView
+            android:id="@+id/drawer_msg_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ai_icon_message" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawer_msg_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="我的消息"
+            android:textColor="@color/white_alpha_224"
+            android:textSize="10sp" />w
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drawer_news"
+        android:layout_width="88dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/drawer_msg"
+        android:layout_marginLeft="@dimen/lay_8"
+        android:layout_marginRight="@dimen/lay_4"
+        android:layout_marginTop="@dimen/lay_8"
+        android:background="@color/header_toast_line">
+
+        <ImageView
+            android:id="@+id/drawer_news_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ai_icon_news" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawer_news_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="勘察新闻"
+            android:textColor="@color/white_alpha_224"
+            android:textSize="10sp" />w
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drawer_tender"
+        android:layout_width="88dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/drawer_msg"
+        android:layout_marginLeft="@dimen/lay_4"
+        android:layout_marginRight="@dimen/lay_4"
+        android:layout_marginTop="@dimen/lay_8"
+        android:layout_toEndOf="@id/drawer_news"
+        android:background="@color/header_toast_line">
+
+        <ImageView
+            android:id="@+id/drawer_tender_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ai_icon_tender" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawer_tender_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="招投标信息"
+            android:textColor="@color/white_alpha_224"
+            android:textSize="10sp" />w
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drawer_setting"
+        android:layout_width="88dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/drawer_news"
+        android:layout_marginLeft="@dimen/lay_8"
+        android:layout_marginRight="@dimen/lay_4"
+        android:layout_marginTop="@dimen/lay_14"
+        android:background="@color/header_toast_line"
+        android:drawableTop="@drawable/ai_icon_set">
+
+        <ImageView
+            android:id="@+id/drawer_setting_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ai_icon_set" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawer_setting_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="系统设置"
+            android:textColor="@color/white_alpha_224"
+            android:textSize="10sp" />w
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drawer_help"
+        android:layout_width="88dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/drawer_tender"
+        android:layout_marginLeft="@dimen/lay_4"
+        android:layout_marginRight="@dimen/lay_4"
+        android:layout_marginTop="@dimen/lay_14"
+        android:layout_toEndOf="@id/drawer_setting"
+        android:background="@color/header_toast_line">
+
+        <ImageView
+            android:id="@+id/drawer_help_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ai_icon_help" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawer_help_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="查看帮助"
+            android:textColor="@color/white_alpha_224"
+            android:textSize="10sp" />w
+    </RelativeLayout>
+
+
+    <net.qiujuer.genius.ui.widget.Button
+        android:id="@+id/drawer_retroaction"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/drawer_help"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ai_icon_retroaction"
+        app:gTouchEffect="ease" />
+
+    <net.qiujuer.genius.ui.widget.Button
+        android:id="@+id/drawer_logout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/drawer_retroaction"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ai_icon_logout"
+        app:gTouchEffect="ease" />
+
+    <net.qiujuer.genius.ui.widget.Button
+        android:id="@+id/drawer_quit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/drawer_logout"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ai_icon_quit"
+        app:gTouchEffect="ease" />
+</RelativeLayout>

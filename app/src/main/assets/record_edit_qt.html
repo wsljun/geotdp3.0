@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+	body{
+		font-family: "微软雅黑";
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		border: 1px solid #000;
+		margin-bottom: 10px;
+		text-align: center;
+		padding: 10px 0;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.one {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 750px;
+	}
+	table {
+		border: 1px solid #dddddd;
+		width: 100%;
+		max-width: 100%;
+		border-collapse: collapse;
+		margin-bottom: 10px;
+	}
+	table > thead > tr {
+	    color: #707070;
+	    font-weight: normal;
+	    background: #F2F2F2;
+	    background-image: -webkit-linear-gradient(top, #f8f8f8 0%, #ececec 100%);
+	    background-image: -o-linear-gradient(top, #f8f8f8 0%, #ececec 100%);
+	    background-image: linear-gradient(to bottom, #f8f8f8 0%, #ececec 100%);
+	    background-repeat: repeat-x;
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f8', endColorstr='#ffececec', GradientType=0);
+	}
+	table > thead > tr > th {
+    	font-weight: bold;
+    	border: 1px solid #dddddd;
+    	padding: 5px 10px;
+	}
+	table > tbody > tr > td {
+    	border: 1px solid #dddddd;
+    	text-align: center;
+    	padding: 5px 10px;
+    	font-size: 14px;
+	}
+	</style>
+</head>
+<body>
+	<div class="one">
+		<h2>取土记录编辑</h2>
+		<!--<ul class="one_a">-->
+			<!--<li><img src="images/16.jpg" alt=""></li>-->
+			<!--<li><img src="images/17.jpg" alt=""></li>-->
+			<!--<li><img src="images/18.jpg" alt=""></li>-->
+			<!--<li><img src="images/19.jpg" alt=""></li>-->
+		<!--</ul>-->
+		<div class="one_b">
+			<h5>操作:</h5>
+			<p>输入取土样的起始深度和终止深度。点击“选择质量等级”、“选择取样工具和方法”，显示下拉菜单，点击相应内容，或自定义填写。点击 “选择试验内容”，显示下拉菜单，点击相应内容，可多选或自定义填写。
+记录编号可自行填写，本软件取土记录编号默认QT-001、QT-002、QT-003、…、QT-n，自动追加记录编号。
+点击“添加照片”，进入拍照，拍照内容为取土试样情况，照片数量未做限制。
+点击右上角“√”，保存该条记录并返回上级界面；点击左上角“×”，放弃该条记录并返回上级界面。</p>
+		</div>
+		<div class="one_b">
+			<h5>知识:</h5>
+			<p>质量等级：土试样质量根据试验目的分为四个等级：</p>
+			<table>
+				<thead>
+					<tr>
+						<th>质量等级</th>
+						<th>扰动程度</th>
+						<th>试验内容</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>I</td>
+						<td>不扰动</td>
+						<td>土类定名、含水量、密度、强度试验、固结试验</td>
+					</tr>
+					<tr>
+					    <td>II</td>
+						<td>轻微扰动</td>
+						<td>土类定名、含水量、密度</td>
+					</tr>
+					<tr>
+					    <td>III</td>
+						<td>显著扰动</td>
+						<td>土类定名、含水量</td>
+					</tr>
+					<tr>
+					    <td>IV</td>
+						<td>完全扰动</td>
+						<td>土类定名</td>
+					</tr>
+				
+				</tbody>
+			</table>
+		</div>
+	</div>
+			
+</body>
+</html>

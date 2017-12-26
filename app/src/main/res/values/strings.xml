@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="app_name">新版勘察</string>-->
+
+    <string name="app_name">新疆勘察</string>
+    <!--<string name="app_name">辽宁勘察</string>-->
+    <!--<string name="app_name">北京勘察</string>-->
+    <!--<string name="app_name">本地勘察</string>-->
+
+
+    <string name="app_name_release">新版勘察</string>
+
+    <string name="title_user_login">用户登录</string>
+
+    <string name="label_user_name">登录名</string>
+    <string name="label_user_pwd">密码</string>
+
+    <string name="hint_user_name">编录员账号</string>
+    <string name="hint_user_pwd">输入密码</string>
+
+    <string name="title_addNewProject">编辑项目</string>
+
+    <string name="label_project_serialNumber">项目序列号</string>
+
+    <string name="label_project_code">项目编号</string>
+    <string name="label_project_fullName">项目名称</string>
+    <string name="label_project_leader">负责人</string>
+
+    <string name="label_project_companyName">勘察单位</string>
+    <string name="label_project_owner">项目业主</string>
+    <string name="label_project_createTime">创建时间</string>
+    <string name="label_project_state">项目状态</string>
+    <string name="label_project_address">地址</string>
+    <string name="label_project_describe">勘察大纲</string>
+
+    <string name="label_project_zoom">比例尺</string>
+
+    <string name="hint_project_serialNumber">输入项目序列号</string>
+    <string name="hint_project_code">项目编号</string>
+    <string name="hint_project_fullName">输入项目名称</string>
+    <string name="hint_project_leader">负责人</string>
+    <string name="hint_project_companyName">输入勘察单位</string>
+    <string name="hint_project_owner">输入项目业主</string>
+
+    <string name="hint_info_null">未填写</string>
+
+    <string name="hint_project_address">输入项目地址</string>
+    <string name="hint_project_zoom">比例尺</string>
+
+    <string name="label_info_project_serialNumber">项目序列号</string>
+    <string name="label_info_project_code">项&#160;目&#160;&#160;编&#160;号</string>
+    <string name="label_info_project_fullName">项&#160;目&#160;&#160;名&#160;称</string>
+    <string name="label_info_project_leader">负&#160;&#160;&#160;&#160;责&#160;&#160;&#160;&#160;人</string>
+
+    <string name="label_info_project_location2">项目所在地</string>
+    <string name="label_info_project_workCompany">项&#160;目&#160;&#160;业&#160;主</string>
+    <string name="label_info_project_companyName">勘&#160;察&#160;&#160;单&#160;位</string>
+    <string name="label_info_project_designCompanyName">设&#160;计&#160;&#160;单&#160;位</string>
+    <string name="label_info_project_createTime">创&#160;建&#160;&#160;时&#160;间</string>
+    <string name="label_info_project_updateTime">更&#160;新&#160;&#160;时&#160;间</string>
+    <string name="label_info_project_state">项&#160;目&#160;&#160;状&#160;态</string>
+    <string name="label_info_project_remark">项&#160;目&#160;&#160;备&#160;注</string>
+
+    <string name="title_addNewHole">编辑勘探点</string>
+    <string name="label_hole_code">勘探点编号</string>
+    <string name="label_hole_type">勘探点类型</string>
+    <string name="label_hole_elevation">勘探点高程</string>
+    <string name="label_hole_depth">设计孔深</string>
+    <string name="label_hole_radius">警示范围(m)</string>
+    <string name="label_hole_mapLongitude">基准经度</string>
+    <string name="label_hole_mapLatitude">基准纬度</string>
+    <string name="label_hole_mapTime">基准时间</string>
+    <string name="label_hole_relate">关联的勘探点</string>
+
+
+    <string name="hint_hole_code">勘探点编号</string>
+    <string name="hint_hole_type">勘探点类型</string>
+    <string name="hint_hole_elevation">勘探点高程</string>
+    <string name="hint_hole_depth">设计孔深</string>
+    <string name="hint_hole_radius">输入警示半径(m)</string>
+    <string name="hint_hole_mapLongitude">没有定位</string>
+    <string name="hint_hole_mapLatitude">没有定位</string>
+    <string name="hint_hole_mapTime">没有定位</string>
+
+
+    <string name="label_record_longitude">经度</string>
+    <string name="label_record_latitude">纬度</string>
+    <string name="label_record_locationTime">定位时间</string>
+    <string name="label_record_accuracy">偏移范围(m)</string>
+    <string name="hint_record_locationState">未定位</string>
+
+    <string name="relate_hole_relate">选择关联勘察点</string>
+    <string name="relate_hole_get">选择获取数据</string>
+    <string name="label_info_hole_code">勘探点编号</string>
+    <string name="label_info_hole_type">勘探点类型</string>
+    <string name="label_info_hole_elevation">勘探点高程</string>
+    <string name="label_info_hole_depth">设&#160;计&#160;&#160;孔&#160;深</string>
+    <string name="label_info_hole_operatePerson">机&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;长</string>
+    <string name="label_info_hole_operateCode">钻&#160;机&#160;&#160;编&#160;号</string>
+    <string name="label_info_hole_radius">警示范围(m)</string>
+    <string name="label_info_hole_createTime">创&#160;建&#160;&#160;时&#160;间</string>
+    <string name="label_info_hole_updateTime">更&#160;新&#160;&#160;时&#160;间</string>
+    <string name="label_info_hole_mapLongitude">基&#160;准&#160;&#160;经&#160;度</string>
+    <string name="label_info_hole_mapLatitude">基&#160;准&#160;&#160;纬&#160;度</string>
+    <string name="label_info_hole_mapTime">基&#160;准&#160;&#160;时&#160;间</string>
+
+
+    <string name="label_operateperson_code">证件号</string>
+    <string name="label_operatecode_code">钻机编号</string>
+    <string name="label_person_name">描述员</string>
+
+    <string name="label_record_code">记录编号*</string>
+    <string name="hint_record_code">输入记录编号</string>
+
+    <string name="label_record_layer_type">岩土分类(可自定义)*</string>
+    <string name="label_record_layer_name">岩土定名(可自定义)*</string>
+    <string name="label_record_layer_wzcf">物质成份(可自定义)</string>
+    <string name="label_record_layer_ys">颜色(可自定义)</string>
+    <string name="label_record_layer_klzc">颗粒组成(可自定义)</string>
+    <string name="label_record_layer_klxz">颗粒形状(可自定义)</string>
+    <string name="label_record_layer_klpl">颗粒排列</string>
+    <string name="label_record_layer_kljp">颗粒级配</string>
+    <string name="label_record_layer_sd">湿度</string>
+    <string name="label_record_layer_msd">密实度</string>
+    <string name="label_record_layer_jyx">均匀性</string>
+    <string name="label_record_layer_zt">状态</string>
+    <string name="label_record_layer_bhw">包含物(可自定义)</string>
+    <string name="label_record_layer_ftfchd">粉土分层厚度(可自定义)</string>
+    <string name="label_record_layer_fzntfchd">粉质黏土分层厚度(可自定义)</string>
+    <string name="label_record_layer_jc">夹层(可自定义)</string>
+    <string name="label_record_layer_kx">孔隙(可自定义)</string>
+    <string name="label_record_layer_czjl">垂直节理</string>
+    <string name="label_record_layer_ybljx">一般粒径小(可自定义)</string>
+    <string name="label_record_layer_ybljd">一般粒径大(可自定义)</string>
+    <string name="label_record_layer_jdljx">较大粒径小(可自定义)</string>
+    <string name="label_record_layer_jdljd">较大粒径大(可自定义)</string>
+    <string name="label_record_layer_zdlj">最大粒径(可自定义)</string>
+    <string name="label_record_layer_mycf">母岩成份(可自定义)</string>
+    <string name="label_record_layer_fhcd">风化程度</string>
+    <string name="label_record_layer_tcw">充填物(可自定义)</string>
+    <string name="label_record_layer_kwzc">矿物组成(可自定义)</string>
+    <string name="label_record_layer_zycf">主要成分(可自定义)</string>
+    <string name="label_record_layer_cycf">次要成份(可自定义)</string>
+    <string name="label_record_layer_djnd">堆积年代</string>
+    <string name="label_record_layer_hsl">含水量(可自定义)</string>
+    <string name="label_record_layer_jycd">坚硬程度</string>
+    <string name="label_record_layer_wzcd">完整程度</string>
+    <string name="label_record_layer_jbzldj">基本质量等级</string>
+    <string name="label_record_layer_kwx">可挖性(可自定义)</string>
+    <string name="label_record_layer_jglx">结构类型</string>
+    <string name="label_record_layer_era">地质年代</string>
+
+    <string name="hint_record_layer_type">岩土分类</string>
+    <string name="hint_record_layer_name">岩土定名</string>
+    <string name="hint_record_layer_wzcf">状态</string>
+    <string name="hint_record_layer_ys">颜色</string>
+    <string name="hint_record_layer_klzc">颗粒组成</string>
+    <string name="hint_record_layer_klxz">颗粒形状</string>
+    <string name="hint_record_layer_klpl">颗粒排列</string>
+    <string name="hint_record_layer_kljp">颗粒级配</string>
+    <string name="hint_record_layer_sd">湿度</string>
+    <string name="hint_record_layer_msd">密实度</string>
+    <string name="hint_record_layer_jyx">均匀性</string>
+    <string name="hint_record_layer_zt">状态</string>
+    <string name="hint_record_layer_bhw">包含物</string>
+    <string name="hint_record_layer_ftfchd">粉土分层厚度</string>
+    <string name="hint_record_layer_fzntfchd">黏土或粉质粘土互层分层厚度</string>
+    <string name="hint_record_layer_jc">夹层</string>
+    <string name="hint_record_layer_kx">孔隙</string>
+    <string name="hint_record_layer_czjl">垂直节理</string>
+    <string name="hint_record_layer_ybljx">一般粒径小</string>
+    <string name="hint_record_layer_ybljd">一般粒径大</string>
+    <string name="hint_record_layer_jdljx">较大粒径小</string>
+    <string name="hint_record_layer_jdljd">较大粒径大</string>
+    <string name="hint_record_layer_zdlj">最大粒径</string>
+    <string name="hint_record_layer_mycf">母岩成份</string>
+    <string name="hint_record_layer_fhcd">风化程度</string>
+    <string name="hint_record_layer_tcw">充填物</string>
+    <string name="hint_record_layer_kwzc">矿物组成</string>
+    <string name="hint_record_layer_zycf">主要成分</string>
+    <string name="hint_record_layer_cycf">次要成份</string>
+    <string name="hint_record_layer_djnd">堆积年代</string>
+    <string name="hint_record_layer_hsl">含水量</string>
+    <string name="hint_record_layer_jycd">坚硬程度</string>
+    <string name="hint_record_layer_wzcd">完整程度</string>
+    <string name="hint_record_layer_jbzldj">基本质量等级</string>
+    <string name="hint_record_layer_kwx">可挖性</string>
+    <string name="hint_record_layer_jglx">结构类型</string>
+    <string name="hint_record_layer_description">编辑其他描述</string>
+    <string name="hint_record_layer_causes">地质成因</string>
+    <string name="hint_record_layer_era">地质年代</string>
+
+
+    <string name="label_record_water_type">地下水类型</string>
+    <string name="label_record_water_show">初见水位*</string>
+    <string name="label_record_water_showTime">初见水位时间*</string>
+    <string name="label_record_water_stable">稳定水位</string>
+    <string name="label_record_water_stableTime">稳定水位时间</string>
+
+    <string name="hint_record_water_type">选择地下水类型</string>
+    <string name="hint_record_water_show">输入初见水位</string>
+    <string name="hint_record_water_showTime">初见水位时间</string>
+    <string name="hint_record_water_stable">输入稳定水位</string>
+    <string name="hint_record_water_stableTime">稳定水位时间</string>
+
+
+    <string name="label_record_get_earthType">土样质量等级</string>
+    <string name="label_record_get_earthMode">取样工具和方法(可自定义)</string>
+    <string name="label_record_get_testType">试验内容(可自定义)</string>
+    <string name="label_record_get_depth">取水深度</string>
+    <string name="label_record_get_waterMode">取水方式</string>
+
+    <string name="hint_record_get_earthType">选择质量等级</string>
+    <string name="hint_record_get_earthMode">选择取样工具和方法</string>
+    <string name="hint_record_get_testType">选择试验内容</string>
+    <string name="hint_record_get_depth">输入取水深度</string>
+    <string name="hint_record_get_waterMode">是否添加大理石粉</string>
+
+    <string name="label_record_power_powerType">动探类型*</string>
+    <string name="label_record_power_drillLength">钻杆长度*</string>
+    <string name="label_record_powerLog_end">终止</string>
+    <string name="label_record_powerLog_blow">击数</string>
+    <string name="label_record_powerLog_end_count">进尺和</string>
+    <string name="label_record_powerLog_blow_count">击数和</string>
+
+    <string name="hint_record_power_powerType">动探类型</string>
+    <string name="hint_record_power_drillLength">钻杆长度</string>
+    <string name="hint_record_powerLog_begin">起始</string>
+    <string name="hint_record_powerLog_end">终止</string>
+    <string name="hint_record_powerLog_blow">击数</string>
+
+    <string name="hint_record_powerLog_end_count">进尺和</string>
+    <string name="hint_record_powerLog_blow_count">击数和</string>
+
+    <string name="title_new_record_frequency">编辑回次记录</string>
+
+    <string name="label_record_frequency_type">钻进方法(可自定义)</string>
+    <string name="label_record_frequency_beginDepth">起始深度*</string>
+    <string name="label_record_frequency_endDepth">终止深度*</string>
+    <string name="label_record_frequency_mode">护壁方法(可自定义)</string>
+    <string name="label_record_frequency_aperture">钻孔孔径</string>
+    <string name="label_record_frequency_situation">钻进情况</string>
+
+
+    <string name="hint_record_frequency_type">钻进方法</string>
+    <string name="hint_record_frequency_beginDepth">输入起始深度</string>
+    <string name="hint_record_frequency_endDepth">输入终止深度</string>
+    <string name="hint_record_frequency_mode">护壁方法</string>
+    <string name="hint_record_frequency_aperture">输入钻孔孔径</string>
+    <string name="hint_record_frequency_situation">进尺速度,抖动,泥浆消耗,孔壁,等..</string>
+
+    <string name="label_info_record_code">记录编号</string>
+    <string name="label_info_record_type">类&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;型</string>
+    <string name="label_info_record_depth">深&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;度</string>
+    <string name="label_info_record_content">内&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;容</string>
+    <string name="label_info_record_createTime">创建时间</string>
+    <string name="label_info_record_updateTime">更新时间</string>
+    <string name="label_info_record_medianumber">照片数量</string>
+
+    <string name="serialNumberTest_progress_dialog">序列号检验</string>
+    <string name="loging_progress_dialog">正在登陆</string>
+    <string name="dictionary_wait_dialog">正在处理</string>
+
+    <string name="media_upload_progress_dialog">媒体上传</string>
+    <string name="please_wait">请等待</string>
+    <string name="title_reminder">提示</string>
+
+    <string name="agree">确定</string>
+    <string name="disagree">取消</string>
+    <string name="custom">自定义</string>
+    <string name="record_finish_save">保存并退出</string>
+    <string name="record_finish_giveup">放弃保存退出</string>
+    <string name="delete">删除</string>
+    <string name="confirmDelete">确认删除?</string>
+    <string name="confirmDelete2">该孔数据还未全部上传到服务器，假如删除，该数据将不复存在，您还删除否？</string>
+    <string name="confirmDelete3">该项目数据还未全部上传到服务器，假如删除，该数据将不复存在，您还删除否？</string>
+    <string name="confirmDelete4">该记录数据还未全部上传到服务器，假如删除，该数据将不复存在，您还删除否？</string>
+
+    <string name="save">保存</string>
+    <string name="add">添加</string>
+    <string name="search">搜索</string>
+    <string name="help">帮助</string>
+
+
+    <!--<string-array name="kwcf_values">-->
+    <!--<item>石英</item>-->
+    <!--<item>云母</item>-->
+    <!--<item>长石</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="zycf_values">-->
+    <!--<item>卵石</item>-->
+    <!--<item>角砾</item>-->
+    <!--<item>黏性土</item>-->
+    <!--<item>粉土</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="cycf_values">-->
+    <!--<item>建筑垃圾</item>-->
+    <!--<item>生活垃圾</item>-->
+    <!--<item>碎砖</item>-->
+    <!--<item>块石</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="wzcf_values">-->
+    <!--<item>以泥沙为主</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="yn_zt_values">-->
+    <!--<item>流塑</item>-->
+    <!--</string-array>-->
+
+
+    <string name="record_operatepersion">注:拍照处应拍摄机长自拍照</string>
+    <string name="record_operatecode">注:拍照处应拍摄钻机铭牌等钻机相关信息</string>
+    <string name="record_recordpersion">注:拍照处应拍描述员自拍照</string>
+    <string name="record_scenescene">注:拍照处应拍摄场景等相关信息</string>
+    <string name="record_frequency">注：红色图标处为必填项</string>
+    <string name="record_principal">注：拍照处应拍项目负责人相关照片</string>
+    <string name="record_technician">注：拍照处应拍摄工程师相关照片</string>
+    <string name="record_video">注：此处录像需要录制完整提钻过程</string>
+
+    <string name="record_layer">注：切换岩土分类时会改变描述模板。</string>
+    <string name="record_scene">注：此处记录该勘探点需要补充说明的内容。。</string>
+    <string name="editHole">注：紫色的圈代表精确度，圈子越小精确度越高。基准点的的定位很重要，应尽量靠近勘探点，等待精确度较高且稳定时再进行定位。</string>
+    <string name="preview_dig_con">确定提交该勘察点吗</string>
+
+
+</resources>

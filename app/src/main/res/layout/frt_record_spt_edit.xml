@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.geotdb.compile.view.MaterialEditTextElevation
+        android:id="@+id/edtDrillLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_power_drillLength"
+        android:phoneNumber="true"
+        app:met_floatingLabel="highlight"
+        app:met_baseColor="@android:color/holo_red_light"
+        app:met_floatingLabelText="@string/label_record_power_drillLength"
+        app:met_iconLeft="@drawable/ai_icon_zuanchang" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtBegin1"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="预计起始"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="预计起始"
+            app:met_iconLeft="@drawable/ai_icon_shendu" />
+
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtEnd1"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="预计终止"
+            android:phoneNumber="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="预计终止"
+            app:met_iconLeft="@drawable/ic_to_grey600_24dp" />
+
+
+    </LinearLayout>
+
+    <com.geotdb.compile.view.MaterialEditTextInt
+        android:id="@+id/edtBlow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1.2"
+        android:hint="预计击数"
+        android:phoneNumber="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="预计击数"
+        app:met_iconLeft="@drawable/ai_icon_jishu" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtBegin2"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:hint="一起始"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="一起始"
+            app:met_iconLeft="@drawable/ai_icon_shendu" />
+
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtEnd2"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="一终止"
+            android:phoneNumber="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="一终止"
+            app:met_iconLeft="@drawable/ic_to_grey600_24dp" />
+        <!--
+            app:met_iconLeft="@drawable/ic_fullscreen_grey600_24dp"  -->
+
+    </LinearLayout>
+
+    <com.geotdb.compile.view.MaterialEditTextInt
+        android:id="@+id/edtBlow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1.2"
+        android:hint="一击数"
+        android:phoneNumber="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="一击数"
+        app:met_iconLeft="@drawable/ai_icon_jishu" />
+
+    <LinearLayout
+        android:id="@+id/lltRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtBegin3"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:hint="二起始"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="二起始"
+            app:met_iconLeft="@drawable/ai_icon_shendu" />
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtEnd3"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="二终止"
+            android:phoneNumber="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="二终止"
+            app:met_iconLeft="@drawable/ic_to_grey600_24dp" />
+
+
+    </LinearLayout>
+
+    <com.geotdb.compile.view.MaterialEditTextInt
+        android:id="@+id/edtBlow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1.2"
+        android:hint="二击数"
+        android:phoneNumber="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="二击数"
+        app:met_iconLeft="@drawable/ai_icon_jishu" />
+
+    <LinearLayout
+        android:id="@+id/lltRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtBegin4"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:hint="三起始"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="三起始"
+            app:met_iconLeft="@drawable/ai_icon_shendu" />
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtEnd4"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="三终止"
+            android:phoneNumber="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="三终止"
+            app:met_iconLeft="@drawable/ic_to_grey600_24dp" />
+
+
+    </LinearLayout>
+
+    <com.geotdb.compile.view.MaterialEditTextInt
+        android:id="@+id/edtBlow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1.2"
+        android:hint="三击数"
+        android:phoneNumber="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="三击数"
+        app:met_iconLeft="@drawable/ai_icon_jishu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtEndCount"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:hint="@string/hint_record_powerLog_end_count"
+            android:phoneNumber="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_powerLog_end_count"
+            app:met_iconLeft="@drawable/ai_icon_zonghe" />
+
+        <com.geotdb.compile.view.MaterialEditTextInt
+            android:id="@+id/edtBlowCount"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            app:met_iconLeft="@drawable/ai_icon_zonghe"
+            android:hint="@string/hint_record_powerLog_blow_count"
+            android:phoneNumber="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_powerLog_blow_count" />
+    </LinearLayout>
+
+</LinearLayout>

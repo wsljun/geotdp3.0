@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 预览画布 -->
+    <SurfaceView
+        android:id="@+id/camera_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+    <!-- 闪光灯、前置摄像头、后置摄像头、聚焦 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/camera_focus_index"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/camera_focus"
+            android:visibility="invisible" />
+
+        <!-- 底部按钮 -->
+
+
+        <ImageView
+            android:id="@+id/camera_image"
+            android:layout_width="320dp"
+            android:layout_height="480dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#a0000000"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/camera_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/camera_shutter_photo" />
+
+            <ImageView
+                android:id="@+id/camera_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:onClick="onClick"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_clear_white_36dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/camera_svae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="onClick"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_check_white_36dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/camera_flip_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp"
+            android:onClick="onClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera_rotate" />
+    </RelativeLayout>
+
+</FrameLayout>

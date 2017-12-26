@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ProjectEditActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtSerialNumber"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_project_serialNumber"
+                    android:phoneNumber="true"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_project_serialNumber"
+                    app:met_iconLeft="@drawable/ai_icon_key" />
+
+
+                <net.qiujuer.genius.ui.widget.Button
+                    android:id="@+id/btnTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/btn_base"
+                    android:text="关联"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/hint_project_fullName"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_project_fullName"
+                app:met_iconLeft="@drawable/ai_icon_projectname" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtCode"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:hint="@string/hint_project_code"
+                    android:singleLine="true"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_project_code"
+                    app:met_iconLeft="@drawable/ai_icon_ktnumber" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtLeader"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:hint="@string/hint_project_leader"
+                    android:singleLine="true"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_project_leader"
+                    app:met_iconLeft="@drawable/ai_icon_commander" />
+            </LinearLayout>
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/hint_project_companyName"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_project_companyName"
+                app:met_iconLeft="@drawable/ai_icon_company" />
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/hint_project_owner"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_project_owner"
+                app:met_iconLeft="@drawable/ai_icon_owner" />
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/hint_project_address"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_project_address"
+                app:met_iconLeft="@drawable/ai_icon_address" />
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/edtDescribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/label_project_describe"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/label_project_describe"
+                app:met_iconLeft="@drawable/ai_icon_edit_projectdes" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="@style/KeyboardViewBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HoleEditActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolAlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolAlt"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.geotdb.compile.view.MaterialEditTextElevation
+                        android:id="@+id/edtBeginDepth"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/hint_record_frequency_beginDepth"
+                        android:phoneNumber="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="@string/label_record_frequency_beginDepth"
+                        app:met_iconLeft="@drawable/ai_icon_shendu" />
+
+                    <com.geotdb.compile.view.MaterialEditTextElevation
+                        android:id="@+id/edtEndDepth"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/hint_record_frequency_endDepth"
+                        android:phoneNumber="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelAlwaysShown="true"
+                        app:met_floatingLabelText="@string/label_record_frequency_endDepth"
+                        app:met_iconLeft="@drawable/ic_to_grey600_24dp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fltDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_record_code"
+                    app:met_baseColor="@android:color/holo_red_light"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAlwaysShown="true"
+                    app:met_floatingLabelText="@string/label_record_code"
+                    app:met_iconLeft="@drawable/ai_icon_ktnumber" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_record_frequency_situation"
+                    android:singleLine="true"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/label_record_frequency_situation"
+                    app:met_iconLeft="@drawable/ai_icon_otherdes" />
+
+                <net.qiujuer.genius.ui.widget.Button
+                    android:id="@+id/record_edit_dptup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_52"
+                    android:layout_marginLeft="@dimen/card_margin"
+                    android:background="@drawable/btn_base"
+                    android:text="保存并添加新记录"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:gTouchColor="#601e88e5"
+                    app:gTouchEffect="ease" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/record_edit_note_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/record_frequency"
+                        android:textColor="@color/text_warning" />
+                </LinearLayout>
+
+                <include layout="@layout/include_record_add_base" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="@style/KeyboardViewBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+
+
+

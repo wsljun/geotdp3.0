@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/dialog_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false" />
+
+    <TextView
+        android:id="@+id/dialog_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dialog_progressBar"
+        android:text="0b/s" />
+
+    <TextView
+        android:id="@+id/dialog_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dialog_speed"
+        android:text="0kb" />
+
+    <TextView
+        android:id="@+id/dialog_gang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dialog_total"
+        android:layout_toLeftOf="@+id/dialog_total"
+        android:layout_toStartOf="@+id/dialog_total"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/dialog_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0kb"
+        android:layout_below="@+id/dialog_progressBar"
+        android:layout_toLeftOf="@+id/dialog_gang"
+        android:layout_toStartOf="@+id/dialog_gang" />
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.geotdb.compile.view.MaterialEditTextElevation
+        android:id="@+id/edtDrillLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/hint_record_power_drillLength"
+        android:phoneNumber="true"
+        app:met_baseColor="@android:color/holo_red_light"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_power_drillLength"
+        app:met_iconLeft="@drawable/ai_icon_zuanchang" />
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/sprPowerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/hint_record_power_powerType"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_power_powerType"
+        app:met_iconLeft="@drawable/ai_icon_kttype" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtBegin"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:digits="0123456789."
+            android:hint="@string/hint_record_powerLog_begin"
+            android:inputType="number"
+            android:maxLength="6"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/hint_record_powerLog_begin"
+            app:met_iconLeft="@drawable/ai_icon_shendu" />
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtEnd"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:digits="0123456789."
+            android:hint="@string/hint_record_powerLog_end"
+            android:inputType="number"
+            android:maxLength="6"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_powerLog_end"
+            app:met_iconLeft="@drawable/ic_to_grey600_24dp" />
+
+
+    </LinearLayout>
+
+    <com.geotdb.compile.view.MaterialEditTextInt
+        android:id="@+id/edtBlow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="0.8"
+        android:digits="0123456789"
+        android:hint="@string/hint_record_powerLog_blow"
+        android:inputType="number"
+        android:maxLength="3"
+        app:met_baseColor="@android:color/holo_red_light"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_powerLog_blow"
+        app:met_iconLeft="@drawable/ai_icon_jishu" />
+
+</LinearLayout>

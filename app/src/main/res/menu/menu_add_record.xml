@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/act_help"
+        android:icon="@drawable/ai_icon_detail"
+        android:orderInCategory="90"
+        android:title="@string/help"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/act_save"
+        android:icon="@drawable/ic_done"
+        android:orderInCategory="90"
+        android:title="@string/save"
+        app:showAsAction="ifRoom" />
+</menu>

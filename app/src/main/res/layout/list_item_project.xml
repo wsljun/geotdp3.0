@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/lltItem"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp">
+
+
+        <TextView
+            android:id="@+id/tvwFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/project_lr"
+            android:layout_marginLeft="6dp"
+            android:layout_toEndOf="@+id/project_lr"
+            android:lines="1"
+            android:text="我是我是标题我是标题"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+        <TextView
+            android:id="@+id/tvwCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvwFullName"
+            android:layout_below="@+id/tvwFullName"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:text="XX-XXX"
+            android:textAppearance="@style/base_list_title_style" />
+
+
+        <TextView
+            android:id="@+id/tvwUpdateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/project_lr"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@drawable/ic_restore_grey600_18dp"
+            android:text="2017-05-4 15:45:12"
+            android:textAppearance="@style/base_list_desc_style" />
+
+
+        <RelativeLayout
+            android:id="@+id/ivwInfo_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvwFullName"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_base"
+            android:gravity="center"
+            android:padding="6dp">
+
+            <net.qiujuer.genius.ui.widget.Button
+                android:id="@+id/ivwInfo"
+                android:layout_width="26dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+
+                android:background="@drawable/ai_icon_ktxl"
+                android:textSize="12sp"
+                app:gTouchEffect="ease" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvwUpdateTime"
+            android:layout_marginBottom="4dp"
+            android:layout_alignStart="@+id/tvwState">
+
+            <ImageView
+                android:id="@+id/tvwHoleCount_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ai_icon_norelevance" />
+
+            <TextView
+                android:id="@+id/tvwHoleCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvwHoleCount_iv"
+                android:layout_marginLeft="4dp"
+                android:text="235"
+                android:textAppearance="@style/base_list_desc_style" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvwState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivwInfo_rl"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/ivwInfo_rl"
+            android:text="已开始"
+            android:textAppearance="@style/base_list_desc_style" />
+
+        <RelativeLayout
+            android:id="@id/project_lr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/btn_base"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ai_six"
+                android:gravity="center"
+                android:padding="4dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="34dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/ai_icon_project" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/project_line"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_300">
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/mpr"
+            style="@style/tallerBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progress="0"
+            android:secondaryProgress="0"
+            app:mpb_progressStyle="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="1dp">
+
+            <LinearLayout
+                android:id="@+id/expandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_300"
+                    android:orientation="horizontal">
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:id="@+id/btnDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/lay_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ai_icon_detail"
+                        android:padding="4dp"
+                        android:text="项目详情"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="12sp"
+                        app:gTouchEffect="ease" />
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:id="@+id/btnEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/lay_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ai_icon_edit"
+                        android:padding="4dp"
+                        android:text="编辑项目"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="12sp"
+                        app:gTouchEffect="ease" />
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:id="@+id/btnHoleList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/lay_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ai_icon_ktxl"
+                        android:padding="4dp"
+                        android:text="勘探点列表"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="12sp"
+                        app:gTouchEffect="ease" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_300"
+                    android:orientation="horizontal">
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:id="@+id/btnOutline"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/lay_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ai_icon_outline"
+                        android:padding="4dp"
+                        android:text="位置导航"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="12sp"
+                        app:gTouchEffect="ease" />
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:id="@+id/btnUpload"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/lay_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ai_icon_upload"
+                        android:padding="4dp"
+                        android:text="上传数量"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="12sp"
+                        app:gTouchEffect="ease" />
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:id="@+id/btnDelete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/lay_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ai_icon_delete"
+                        android:padding="4dp"
+                        android:text="删除项目"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="12sp"
+                        app:gTouchEffect="ease" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+

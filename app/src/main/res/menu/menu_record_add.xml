@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_undo_white_24dp"
+        android:title="添加回次记录"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:icon="@drawable/ic_undo_white_24dp"
+        android:title="添加岩土描述"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:icon="@drawable/ic_undo_white_24dp"
+        android:title="添加取土记录"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:icon="@drawable/ic_undo_white_24dp"
+        android:title="添加取水记录"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:icon="@drawable/ic_undo_white_24dp"
+        app:showAsAction="ifRoom|withText"
+        android:title="添加动探记录"
+        android:visible="true" />
+    <item
+        android:icon="@drawable/ic_undo_white_24dp"
+        android:title="添加标贯记录"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:icon="@drawable/ic_undo_white_24dp"
+        android:title="添加水位记录"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:icon="@drawable/ic_undo_white_24dp"
+        android:title="添加备注说明"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+</menu>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo"></style>
+
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/met_primaryColor</item>
+        <item name="colorPrimaryDark">@color/met_primaryColor</item>
+        <item name="colorAccent">@color/met_primaryColor</item>
+        <item name="android:windowBackground">@color/window_background</item>
+
+        <!-- 对话框样式调整 material-dialogs -->
+        <!-- 确定按钮的颜色 -->
+        <item name="md_positive_color">@color/md_material_blue_600</item>
+        <!-- 取消按钮的颜色 -->
+        <item name="md_negative_color">@color/md_material_blue_600</item>
+
+        <!-- 文本框样式调整 MaterialEditText -->
+        <item name="met_baseColor">@color/met_baseColor</item>
+        <item name="met_textColor">@color/met_textColor</item>
+        <item name="met_primaryColor">@color/met_primaryColor</item>
+        <item name="met_floatingLabelTextColor">@color/met_floatingLabelTextColor</item>
+        <item name="met_underlineColor">@color/met_underlineColor</item>
+        <!--底部横线颜色 -->
+        <item name="met_iconPadding">0dp</item>
+
+        <item name="android:popupMenuStyle">@style/Theme.PopupMenu</item>
+
+        <item name="android:listDivider">@color/met_baseColor</item>
+    </style>
+    <!--  启动界面style-->
+    <style name="WelcomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/map_title_blue</item>
+    </style>
+
+    <!--　键盘的样式 -->
+    <style name="KeyboardViewBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_marginTop">10dip</item>
+        <item name="android:background">@color/grey_400</item>
+        <item name="android:keyTextColor">@color/white</item>
+        <item name="android:labelTextSize">24sp</item>
+        <item name="android:keyTextSize">36sp</item>
+    </style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance"></style>
+
+    <style name="TextAppearance.All">
+        <item name="android:textColor">#ff00ff00</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorHint">@color/md_material_blue_600</item>
+        <item name="android:textColorLink">#ff0000ff</item>
+        <item name="android:textColorHighlight">#ff00ff00</item>
+    </style>
+
+    <style name="TextAppearanceTitle" parent="android:TextAppearance">
+        <item name="android:textColor">@color/map_title_blue</item>
+        <item name="android:shadowColor">#ffff0000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">10</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="base_list_title_style">
+        <item name="android:textSize">@dimen/base_list_title_text_size</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/base_list_title_color</item>
+    </style>
+
+    <style name="base_list_desc_style">
+        <item name="android:textSize">@dimen/base_list_desc_text_size</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/base_list_desc_color</item>
+    </style>
+
+    <style name="base_list_tag_style">
+        <item name="android:textSize">@dimen/base_list_tag_text_size</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/base_list_tag_color</item>
+    </style>
+
+
+    <style name="FeeWindowAnimTheme" parent="Theme.DesignDemo">
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="Animation.Activity.Style" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_up_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_up_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_up_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_up_out</item>
+    </style>
+
+    <style name="Animation.Activity.Translucent.Style" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+
+    <style name="MenuButtonsSmall">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/met_primaryColor</item>
+        <item name="fab_colorPressed">@color/met_primaryColor</item>
+        <item name="fab_colorRipple">@color/met_primaryColor</item>
+    </style>
+
+    <style name="MenuButtonsSmall.hc">
+        <item name="fab_colorNormal">@color/list_normal1</item>
+        <item name="fab_colorPressed">@color/list_normal1</item>
+        <item name="fab_colorRipple">@color/list_normal1</item>
+    </style>
+
+    <style name="MenuButtonsSmall.yt">
+        <item name="fab_colorNormal">@color/list_normal2</item>
+        <item name="fab_colorPressed">@color/list_normal2</item>
+        <item name="fab_colorRipple">@color/list_normal2</item>
+    </style>
+
+    <style name="MenuButtonsSmall.sw">
+        <item name="fab_colorNormal">@color/list_normal3</item>
+        <item name="fab_colorPressed">@color/list_normal3</item>
+        <item name="fab_colorRipple">@color/list_normal3</item>
+    </style>
+
+    <style name="MenuButtonsSmall.dt">
+        <item name="fab_colorNormal">@color/list_normal4</item>
+        <item name="fab_colorPressed">@color/list_normal4</item>
+        <item name="fab_colorRipple">@color/list_normal4</item>
+    </style>
+
+    <style name="MenuButtonsSmall.bg">
+        <item name="fab_colorNormal">@color/list_normal5</item>
+        <item name="fab_colorPressed">@color/list_normal5</item>
+        <item name="fab_colorRipple">@color/list_normal5</item>
+    </style>
+    <style name="MenuButtonsSmall.qt">
+        <item name="fab_colorNormal">@color/list_normal6</item>
+        <item name="fab_colorPressed">@color/list_normal6</item>
+        <item name="fab_colorRipple">@color/list_normal6</item>
+    </style>
+    <style name="MenuButtonsSmall.qs">
+        <item name="fab_colorNormal">@color/list_normal7</item>
+        <item name="fab_colorPressed">@color/list_normal7</item>
+        <item name="fab_colorRipple">@color/list_normal7</item>
+    </style>
+
+    <color name="PopupWindowBackground">#303030</color>
+
+    <style name="Theme.PopupMenu" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:popupBackground">@color/PopupWindowBackground</item>
+    </style>
+
+
+    <style name="tallerBarStyle" parent="Widget.MaterialProgressBar.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">1dip</item>
+        <item name="android:maxHeight">2dip</item>
+    </style>
+
+    <style name="Info">
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:editable">false</item>
+        <item name="android:enabled">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="met_floatingLabel">none</item>
+        <item name="met_primaryColor">@color/grey_600</item>
+        <item name="met_floatingLabelTextSize">14sp</item>
+        <item name="met_floatingLabelAlwaysShown">true</item>
+        <item name="met_floatingLabelTextColor">@color/black</item>
+    </style>
+
+    <style name="Info.Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:gravity">right</item>
+        <item name="met_hideUnderline">true</item>
+    </style>
+
+    <style name="Info.Label.mark">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="custom_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/login_check</item>
+    </style>
+
+</resources>

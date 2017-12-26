@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlate_user_rl"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="25dp"
+    android:orientation="vertical">
+
+
+    <CheckBox
+        android:id="@+id/relate_user_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:id="@+id/relate_user_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/relate_user_check">
+
+        <TextView
+            android:id="@+id/relate_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="name"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/relate_user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:text="phone"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/relate_user_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relate_user_rl"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/relate_user_check"
+        android:text="code" />
+
+    <TextView
+        android:id="@+id/relate_user_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relate_user_rl"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:text="time"
+        android:textSize="14sp" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/relate_user_id"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/relate_user_rl"-->
+    <!--android:layout_toEndOf="@+id/relate_user_check"-->
+    <!--android:text="（本人）"-->
+    <!--android:textSize="14sp"-->
+    <!--android:visibility="gone" />-->
+</RelativeLayout>

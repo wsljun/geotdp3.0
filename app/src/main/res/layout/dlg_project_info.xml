@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_dialog_title">
+
+        <TextView
+            android:id="@+id/project_fullname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="50dp"
+            android:singleLine="true"
+            android:text="项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/project_close_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/ai_icon_close" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_serialNumber" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:layout_weight="0"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtSerialNumber"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_serialNumber" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_fullName" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtFullName"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_fullName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_code" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtCode"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_code" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_location2" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtAddress"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_location2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_workCompany" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtWorkCompany"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_workCompany" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_companyName" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtCompanyName"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_companyName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_designCompanyName" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtDesignCompanyName"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_designCompanyName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_createTime" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtCreateTime"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_createTime" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_updateTime" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtUpdateTime"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_updateTime" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_state" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtState"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_state" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_remark" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtRemark"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_remark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label"
+                    android:text="@string/label_info_project_leader" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    style="@style/Info.Label.mark"
+                    android:text=":" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/edtLeader"
+                    style="@style/Info"
+                    android:hint="@string/hint_info_null"
+                    app:met_floatingLabelText="@string/label_info_project_leader" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_dialog_bottom"></RelativeLayout>
+
+</LinearLayout>

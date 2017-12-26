@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.geotdb.compile.view.MaterialEditTextNoEmoji
+            android:id="@+id/edtLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/hint_record_locationState"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_latitude"
+            app:met_iconLeft="@drawable/ai_icon_latitude" />
+
+        <com.geotdb.compile.view.MaterialEditTextNoEmoji
+            android:id="@+id/edtLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/hint_record_locationState"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_longitude"
+            app:met_iconLeft="@drawable/ai_icon_longitude" />
+
+        <com.geotdb.compile.view.MaterialEditTextNoEmoji
+            android:id="@+id/edtLocationTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/hint_record_locationState"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_locationTime"
+            app:met_iconLeft="@drawable/ai_icon_locationtime" />
+
+        <com.geotdb.compile.view.MaterialEditTextNoEmoji
+            android:id="@+id/edtZoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:enabled="false"
+            android:hint="@string/hint_record_locationState"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_project_zoom"
+            app:met_iconLeft="@drawable/ai_icon_magnify" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editHole"
+            android:textColor="@color/text_warning" />
+    </LinearLayout>
+</LinearLayout>

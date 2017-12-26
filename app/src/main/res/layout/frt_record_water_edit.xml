@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/waterType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_record_water_type"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_water_type"
+        app:met_iconLeft="@drawable/ic_unfold_less_grey600_24dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtWaterShow"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_record_water_show"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_water_show"
+            app:met_iconLeft="@drawable/ai_icon_chushui" />
+
+
+        <net.qiujuer.genius.ui.widget.Button
+            android:id="@+id/btnAddWaterShow"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:background="#1E88E5"
+            android:text="更新"
+            android:textColor="#ffffff"
+            app:gTouchEffect="ease" />
+    </LinearLayout>
+
+    <com.geotdb.compile.view.MaterialEditTextNoEmoji
+        android:id="@+id/edtWaterShowTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="@string/hint_record_water_showTime"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_water_showTime"
+        app:met_iconLeft="@drawable/ai_icon_watertime" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.geotdb.compile.view.MaterialEditTextElevation
+            android:id="@+id/edtWaterStable"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_record_water_stable"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_record_water_stable"
+            app:met_iconLeft="@drawable/ai_icon_wenshui" />
+
+
+        <net.qiujuer.genius.ui.widget.Button
+            android:id="@+id/btnAddWaterStable"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:background="#1E88E5"
+            android:text="更新"
+            android:textColor="#ffffff"
+            app:gTouchEffect="ease" />
+    </LinearLayout>
+
+    <com.geotdb.compile.view.MaterialEditTextNoEmoji
+        android:id="@+id/edtWaterStableTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="@string/hint_record_water_stableTime"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_water_stableTime"
+        app:met_iconLeft="@drawable/ai_icon_watertime" />
+</LinearLayout>

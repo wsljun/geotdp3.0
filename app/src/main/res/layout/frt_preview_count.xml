@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_person"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="描述员"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="描述员"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_describeuser" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_person_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="照片"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="照片数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_picture" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_op"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="机长"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="机长"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_commander" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_op_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="照片"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="照片数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_picture" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_oc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="钻机"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="钻机"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_machine" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_oc_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="照片"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="照片数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_picture" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_scene"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="场景"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="场景"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_scene" />
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_scene_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="照片"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="照片数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_picture" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_frequency"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="回次"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="回次个数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_huici" />
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_layer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="岩土"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="岩土个数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_yantu" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_water"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="水位"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="水位个数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_shuiwei" />
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_getlayer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="取土"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="取土个数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_qutu" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_getwater"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="取水"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="取水个数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_qushui" />
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_dpt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="动探"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="动探个数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_dongtan" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_spt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="标贯"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="标贯个数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_biaoguan" />
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_photo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="照片"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="照片总个数"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_picture" />
+            </LinearLayout>
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/preview_count_totaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="作业起至时间"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="作业起至时间"
+                app:met_floatingLabelTextColor="@color/met_primaryColor"
+                app:met_iconLeft="@drawable/ai_icon_wordtime" />
+
+            <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                android:id="@+id/preview_count_worktime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="作业用时"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="作业用时"
+                app:met_floatingLabelTextColor="@color/met_primaryColor"
+                app:met_iconLeft="@drawable/ai_icon_wordyongshi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_place1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="0m~5m"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="偏移基准点0m~5m"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_pianyi" />
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_place2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="5m~15m"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="偏移基准点5m~15m"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_pianyi" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_place3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="15m~25m"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="偏移基准点15m~25m"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_pianyi" />
+
+
+                <com.geotdb.compile.view.MaterialEditTextNoEmoji
+                    android:id="@+id/preview_count_place4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="25m~"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="偏移基准点25m~"
+                    app:met_floatingLabelTextColor="@color/met_primaryColor"
+                    app:met_iconLeft="@drawable/ai_icon_pianyi" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

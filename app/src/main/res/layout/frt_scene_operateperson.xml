@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.geotdb.compile.view.MaterialBetterSpinner
+        android:id="@+id/operateperson_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="选择机长姓名"
+        app:met_baseColor="@android:color/holo_red_light"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="机长"
+        app:met_iconLeft="@drawable/ic_unfold_less_grey600_24dp" />
+
+    <com.geotdb.compile.view.MaterialEditTextNoEmoji
+        android:id="@+id/operateperson_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入机长证件号"
+        app:met_baseColor="@android:color/holo_red_light"
+        app:met_clearButton="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_operateperson_code"
+        app:met_iconLeft="@drawable/ic_fullscreen_grey600_24dp" />
+</LinearLayout>

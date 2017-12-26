@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+	body{
+		font-family: "微软雅黑";
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		border: 1px solid #000;
+		margin-bottom: 10px;
+		text-align: center;
+		padding: 10px 0;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.one {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 750px;
+	}
+	table {
+		border: 1px solid #dddddd;
+		width: 100%;
+		max-width: 100%;
+		border-collapse: collapse;
+		margin-bottom: 10px;
+	}
+	table > thead > tr {
+	    color: #707070;
+	    font-weight: normal;
+	    background: #F2F2F2;
+	    background-image: -webkit-linear-gradient(top, #f8f8f8 0%, #ececec 100%);
+	    background-image: -o-linear-gradient(top, #f8f8f8 0%, #ececec 100%);
+	    background-image: linear-gradient(to bottom, #f8f8f8 0%, #ececec 100%);
+	    background-repeat: repeat-x;
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f8', endColorstr='#ffececec', GradientType=0);
+	}
+	table > thead > tr > th {
+    	font-weight: bold;
+    	border: 1px solid #dddddd;
+    	padding: 5px 10px;
+	}
+	table > tbody > tr > td {
+    	border: 1px solid #dddddd;
+    	text-align: center;
+    	padding: 5px 10px;
+    	font-size: 14px;
+	}
+	</style>
+</head>
+<body>
+	<div class="one">
+		<h2>岩土描述</h2>
+		<!--<ul class="one_a">-->
+			<!--<li><img src="images/06.jpg" alt=""></li>-->
+			<!--<li><img src="images/07.jpg" alt=""></li>-->
+			<!--<li><img src="images/08.jpg" alt=""></li>-->
+			<!--<li><img src="images/09.jpg" alt=""></li>-->
+			<!--<li><img src="images/10.jpg" alt=""></li>-->
+			<!--<li><img src="images/11.jpg" alt=""></li>-->
+		<!--</ul>-->
+
+		<div class="one_b">
+			<h4>操作</h4>
+			<p>根据钻进（探井）深度，按回次（地层）进行岩土描述。该界面根据岩土分类、土层定名、相关描述等内容构成，描述内容以下拉菜单点选为主，亦可自定义描述。</p>
+			<p>岩土分类：点击显示下来菜单，选择岩土分类。</p>
+			<p>岩土定名：点击显示下拉菜单，根据岩土分类显示该分类中的土层定名，点选岩土定名。根据规范规定进行岩土描述内容， </p>
+		</div>
+
+		<div class="one_b">
+			<h4>知识</h4>
+			<p>根据《岩土工程勘察规范》(GB50021)岩土按其工程性质和粒径进行分类：岩石、碎石土、砂土、粉土、黏性土及其它特殊岩土。</p>
+		</div>
+
+		<div class="one_c">
+			<h5>岩土分类</h5>
+			<table>
+				<thead>
+					<tr>
+						<th>岩土分类</th>
+						<th>说明</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>岩石</td>
+						<td>组成地壳的矿物集合体</td>
+					</tr>
+					<tr>
+						<td>碎石土</td>
+						<td>粒径大于2mm 的颗粒质量超过总质量50%的土，应定名为碎石土</td>
+					</tr>
+					<tr>
+						<td>砂土</td>
+						<td>粒径大于2mm 的颗粒质量不超过总质量的50%，粒径大于0.075mm 的颗粒质量超过总质量50%的土</td>
+					</tr>
+					<tr>
+						<td>粉土</td>
+						<td>粒径大于0.075mm 的颗粒质量不超过总质量的50%，且塑性指数等于或小于10 的土</td>
+					</tr>
+					<tr>
+						<td>黏性土</td>
+						<td>塑性指数大于10 的土</td>
+					</tr>
+					<tr>
+						<td>特殊土</td>
+						<td>具有特殊物质成分、结构和独特工程特性的土</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>岩石的描述应包括地质年代、地质名称、风化程度、颜色、主要矿物、结构、构造和岩石质量指标RQD。对沉积岩应着重描述沉积物的颗粒大小、形状、胶结物成分和胶结程度；对岩浆岩和变质岩应着重描述矿物结晶大小和结晶程度。</p>
+			<p>岩石质量指标(RQD)：用直径为75mm的金刚石钻头和双层岩芯管在岩石中钻进，连续取芯，回次钻进所取岩芯中，长度大于10cm的岩芯段长度之和与该回次进尺的比值，以百分比表示。</p>
+			<table>
+				<thead>
+					<tr>
+						<th>岩石质量等级</th>
+						<th>岩石质量指标（%）</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>极差</td>
+						<td>RQD<25</td>
+					</tr>
+					<tr>
+						<td>差</td>
+						<td>RQD=25 ~50</td>
+					</tr>
+					<tr>
+						<td>较差</td>
+						<td>RQD=50~ 75</td>
+					</tr>
+					<tr>
+						<td>较好</td>
+						<td>RQD=75~ 90</td>
+					</tr>
+					<tr>
+						<td>好</td>
+						<td>RQD>90</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>岩可分为的()、的()、的()、的()和的()。</p>
+			<p>岩体的描述应包括结构面、结构体、岩层厚度和结构类型，并宜符合下列规定：<br>
+1结构面的描述包括类型、性质、产状、组合形式、发育程度、延展情况、闭合程度、粗糙程度、充填情况和充填物性质以及充水性质等；<br>
+2结构体的描述包括类型、形状、大小和结构体在围岩中的受力情况等；</p>
+
+
+            <h5>岩土厚度分类</h5>
+				<table>
+				<thead>
+					<tr>
+						<th>厚度分类</th>
+						<th>岩层厚度h(m)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>薄层</td>
+						<td>h≤0.1</td>
+					</tr>
+					<tr>
+						<td>中厚层</td>
+						<td>0.1<h≤0.5</td>
+					</tr>
+					<tr>
+						<td>厚层</td>
+						<td>0.5<h≤1.0</td>
+					</tr>
+					<tr>
+						<td>巨厚层</td>
+						<td>h>1.0</td>
+					</tr>
+				</tbody>
+			</table>
+                <h5>岩石按风化程度分类</h5>
+				<table>
+				<thead>
+					<tr>
+						<th>风化程度</th>
+						<th>野外特征</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>残积土</td>
+						<td>组织结构全部破坏，已风化成土状，镐锹易挖掘，干钻易钻进，具可塑性</td>
+					</tr>
+					<tr>
+						<td>全风化</td>
+						<td>结构大部分破坏，矿物成分显著变化，风化裂隙很发育，岩体破碎，用镐可挖，干钻不易钻进</td>
+					</tr>
+					<tr>
+						<td>中等风化</td>
+						<td>结构部分破坏，沿节理面有次生矿物，风化裂隙发育，岩体被切割成岩块，用镐难挖，岩芯钻方可钻进</td>
+					</tr>
+					<tr>
+						<td>微风化</td>
+						<td>结构基本未变，仅节理面有渲染或略有变色，有少量风化裂隙</td>
+					</tr>
+					<tr>
+						<td>未风化</td>
+						<td>岩质新鲜，偶见风化痕迹</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h5>岩土定名</h5>
+			<table>
+				<thead>
+					<tr>
+						<th>碎石土定名</th>
+						<th>颗粒形状</th>
+						<th>颗粒级配</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>漂石</td>
+						<td>圆形及亚圆形为主</td>
+						<td>粒径大于200mm的颗粒质量超过总质量50%</td>
+					</tr>
+					<tr>
+						<td>块石</td>
+						<td>棱角形为主</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>卵石</td>
+						<td>圆形及亚圆形为主</td>
+						<td>粒径大于20mm的颗粒质量超过总质量50%</td>
+					</tr>
+					<tr>
+						<td>碎石</td>
+						<td>棱角形为主</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>圆砾</td>
+						<td>圆形及亚圆形为主</td>
+						<td>粒径大于2mm的颗粒质量超过总质量50%</td>
+					</tr>
+					<tr>
+						<td>角砾</td>
+						<td>棱角形为主</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>注：定名时，应根据颗粒级配由大到小以最先符合者确定。</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th>砂土定名</th>
+						<th>粒组含量</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>砾   砂</td>
+						<td>粒径大于2 mm的颗粒占全重的2 5～5 0%</td>
+					</tr>
+					<tr>
+						<td>粗   砂</td>
+						<td>粒径大于0.5 mm的颗粒超过全重的5 0%</td>
+					</tr>
+					<tr>
+						<td>中   砂</td>
+						<td>粒径大于0.25 mm的颗粒超过全重的5 0%</td>
+					</tr>
+					<tr>
+						<td>细   砂</td>
+						<td>粒径大于0.1 mm的颗粒超过全重的75 %</td>
+					</tr>
+					<tr>
+						<td>粉   砂</td>
+						<td>粒径大于0.1 mm的颗粒小于全重的75%</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>注：定名时，应根据颗粒级配由大到小以最先符合者确定。</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th>黏性土定名</th>
+						<th>塑性指数</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>粉质黏土</td>
+						<td>塑性指数大于10，且小于或等于17 的土</td>
+					</tr>
+					<tr>
+						<td>黏土</td>
+						<td>塑性指数大于17 的土</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="one_a">
+				根据《岩土工程勘察规范》(GB50021)规定，各类土层描述应符合下列规定：<br>
+				1碎石土应描述颗粒级配、颗粒形状、颗粒排列、母岩成分、风化程度、充填物的性质和充填程度、密实度等；<br>
+				2砂土应描述颜色、矿物组成、颗粒级配、颗粒形状、粘粒含量、湿度、密实度等；<br>
+				3粉土应描述颜色、包含物、湿度、密实度、摇震反应、光泽反应、干强度、韧性等；<br>
+				4粘性土应描述颜色、状态、包含物、摇震反应、光泽反应、干强度、韧性、土层结构等；<br>
+				5特殊性土除应描述上述相应土类规定的内容外，尚应描述其特殊成分和特殊性质；如对淤泥尚需描述嗅味，对填土尚需描述物质成分、堆积年代、密实度和厚度的均匀程度等；<br>
+				6对具有互层、夹层、夹薄层特征的土，尚应描述各层的厚度和层理特征。
+			</p>
+	            <h5>碎石土野外鉴别密实度</h5>
+				<table>
+				<thead>
+					<tr>
+						<th>密实度</th>
+						<th>骨架颗粒含量</th>
+						<th>骨架颗粒排列</th>
+						<th>可挖性</th>
+						<th>可钻性</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>松散</td>
+						<td>骨架颗粒质量小于总质量的60%</td>
+						<td>骨架颗粒排列很混乱，大部分不接触</td>
+						<td>锹可以挖掘，井壁易坍塌，从井壁取出大颗粒后，立即塌落</td>
+						<td>钻进较易，钻杆稍有跳动，孔壁易坍塌</td>
+					</tr>
+					<tr>
+						<td>中密</td>
+						<td>骨架颗粒质量介于总质量的60%~70%</td>
+						<td>呈交错排列，大部分接触<25</td>
+						<td>锹镐可以挖掘，井壁有掉块现象，从井壁取出大颗粒后，能保持凹面形状</td>
+						<td>钻进较困难，钻杆、吊锤跳动不剧烈，孔壁有坍塌现象</td>
+					</tr>
+					<tr>
+						<td>密实</td>
+						<td>骨架颗粒质量大于总质量的70%</td>
+						<td>呈交错排列，连续接触</td>
+						<td>锹镐挖掘困难，用撬棍方能松动，井壁较稳定</td>
+						<td>钻进困难，钻杆、吊锤跳动剧烈，孔壁较稳定</td>
+					</tr>
+				</tbody>
+			</table>
+            <h5>根据标准贯入试验锤击数实测值N划分砂土的密实度</h5>
+			<table>
+				<thead>
+					<tr>
+						<th>锤击数N</th>
+						<th>密实度</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>N≤10</td>
+						<td>松散</td>
+					</tr>
+					<tr>
+						<td>10<N≤15</td>
+						<td>稍密</td>
+					</tr>
+					<tr>
+						<td>15<N≤30</td>
+						<td>中密</td>
+					</tr>
+					<tr>
+						<td>N>30</td>
+						<td>密实</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+			
+</body>
+</html>

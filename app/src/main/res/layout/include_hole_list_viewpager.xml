@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp">
+
+            <com.geotdb.compile.view.MaterialBetterSpinner
+                android:id="@+id/sprSort"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textSize="16sp"
+                app:met_hideUnderline="false" />
+
+            <com.geotdb.compile.view.MaterialBetterSpinner
+                android:id="@+id/sprSequence"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textSize="16sp"
+                app:met_hideUnderline="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="1dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/expandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:id="@+id/btnDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ic_info_white_36dp"
+                        android:padding="4dp"
+                        android:text="回次"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="14sp"
+                        app:gTouchEffect="ease" />
+
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:id="@+id/btnEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ic_create_white_36dp"
+                        android:padding="4dp"
+                        android:text="岩土"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="14sp"
+                        app:gTouchEffect="ease" />
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:id="@+id/btnHoleList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ic_view_list_white_36dp"
+                        android:padding="4dp"
+                        android:text="动探"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="14sp"
+                        app:gTouchEffect="ease" />
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ic_view_list_white_36dp"
+                        android:padding="4dp"
+                        android:text="标惯"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="14sp"
+                        app:gTouchEffect="ease" />
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ic_visibility_white_36dp"
+                        android:padding="4dp"
+                        android:text="水位"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="14sp"
+                        app:gTouchEffect="ease" />
+
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ic_file_upload_white_36dp"
+                        android:padding="4dp"
+                        android:text="备注"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="14sp"
+                        app:gTouchEffect="ease" />
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ic_delete_white_36dp"
+                        android:padding="4dp"
+                        android:text="取土"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="14sp"
+                        app:gTouchEffect="ease" />
+
+                    <net.qiujuer.genius.ui.widget.Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_base"
+                        android:drawableTop="@drawable/ic_delete_white_36dp"
+                        android:padding="4dp"
+                        android:text="取水"
+                        android:textColor="@color/white_alpha_224"
+                        android:textSize="14sp"
+                        app:gTouchEffect="ease" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/recordListFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/addProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_visibility_white_36dp"
+                fab:fab_colorNormal="#eb0054c4"
+                fab:fab_colorPressed="#be0056d3"
+                fab:fab_colorRipple="#99FFFFFF"
+                fab:fab_elevationCompat="6dp"
+                fab:fab_shadowColor="#66000000"
+                fab:fab_shadowRadius="4dp"
+                fab:fab_shadowXOffset="1dp"
+                fab:fab_shadowYOffset="3dp"
+                fab:fab_showShadow="true"
+                fab:fab_size="normal" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="0dp"
+        android:background="@null"
+        android:paddingBottom="0dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="0dp"
+        android:paddingTop="8dp"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_backgroundColor="#baffffff"
+        fab:menu_colorNormal="@color/met_primaryColor"
+        fab:menu_colorPressed="@color/met_primaryColor"
+        fab:menu_colorRipple="@color/met_primaryColor"
+        fab:menu_fab_size="mini"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_labels_showAnimation="@anim/jump_from_down"
+        fab:menu_labels_singleLine="true"
+        fab:menu_openDirection="down"
+        fab:menu_showShadow="false">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabScene"
+            style="@style/MenuButtonsSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ai_icon_add_bz"
+            fab:fab_label="添加备注记录" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabGetWater"
+            style="@style/MenuButtonsSmall.qs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ai_icon_add_qs"
+            fab:fab_label="添加取水记录" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabWater"
+            style="@style/MenuButtonsSmall.sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ai_icon_add_sw"
+            fab:fab_label="添加水位记录" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabDPT"
+            style="@style/MenuButtonsSmall.dt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ai_icon_dongtan"
+            fab:fab_label="添加动探记录" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabSPT"
+            style="@style/MenuButtonsSmall.bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ai_icon_biaoguan"
+            fab:fab_label="添加标贯记录" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabGetEarth"
+            style="@style/MenuButtonsSmall.qt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ai_icon_qutu"
+            fab:fab_label="添加取土记录" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabLayer"
+            style="@style/MenuButtonsSmall.yt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ai_icon_yantu"
+            fab:fab_label="添加岩土描述" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabFrequency"
+            style="@style/MenuButtonsSmall.hc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ai_icon_huici"
+            fab:fab_label="添加回次记录" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</FrameLayout>

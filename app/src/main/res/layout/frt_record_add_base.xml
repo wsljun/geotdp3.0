@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+
+    <com.geotdb.compile.view.MaterialEditTextNoEmoji
+        android:id="@+id/edtLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="@string/hint_record_locationState"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_latitude"
+        app:met_iconLeft="@drawable/ai_icon_latitude" />
+
+    <com.geotdb.compile.view.MaterialEditTextNoEmoji
+        android:id="@+id/edtLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="@string/hint_record_locationState"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_longitude"
+        app:met_iconLeft="@drawable/ai_icon_longitude" />
+
+
+    <com.geotdb.compile.view.MaterialEditTextNoEmoji
+        android:id="@+id/edtLocationTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:enabled="false"
+        android:hint="@string/hint_record_locationState"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_locationTime"
+        app:met_iconLeft="@drawable/ai_icon_locationtime" />
+
+    <com.geotdb.compile.view.MaterialEditTextNoEmoji
+        android:id="@+id/edtAccuracy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:enabled="false"
+        android:hint="@string/hint_record_locationState"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/label_record_accuracy"
+        app:met_iconLeft="@drawable/ai_icon_magnify" />
+</LinearLayout>
