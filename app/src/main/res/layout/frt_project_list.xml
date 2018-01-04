@@ -56,9 +56,9 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:layout_marginBottom="20dp"
+            android:layout_margin="20dp"
             android:text="当前用户无项目，请点击右上角添加项目"
             android:textColor="@color/map_title_blue"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
     </RelativeLayout>
 </RelativeLayout>

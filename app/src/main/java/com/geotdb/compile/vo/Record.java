@@ -18,6 +18,7 @@ package com.geotdb.compile.vo;
 
 
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.amap.api.location.AMapLocation;
 import com.geotdb.compile.utils.Key;
@@ -28,6 +29,7 @@ import com.geotdb.compile.db.RecordDao;
 import com.geotdb.compile.utils.Common;
 import com.geotdb.compile.utils.DateUtil;
 import com.geotdb.compile.utils.L;
+import com.geotdb.compile.utils.ToastUtil;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.GenericRawResults;
 import com.j256.ormlite.dao.RawRowMapper;

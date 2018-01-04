@@ -24,7 +24,7 @@ public class Urls {
 //    public static final String SERVER_PATH = "http://192.168.1.117:80/";//王浩
 //    public static final String SERVER_PATH = "http://192.168.1.102:8087/";//my
 
-//    public static final String SERVER_PATH = "http://ln.geotdp.com/";//辽宁勘察
+//    public static final String SERVER_PATH = "http://ln.geotdp.com:8081/";//辽宁勘察
     public static final String SERVER_PATH = "http://xj.geotdp.com/";//新疆
 //    public static final String SERVER_PATH = "http://218.249.134.238:8082/";//新平台测试
 //    public static final String SERVER_PATH = "http://bj.geotdp.com:8081/";//北京

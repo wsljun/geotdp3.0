@@ -32,7 +32,7 @@ public class L {
             int strLength = msg.length();
             int start = 0;
             int end = 2000;
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 300; i++) {
                 if (strLength > end) {
                     Log.e(TAG + i, msg.substring(start, end));
                     start = end;

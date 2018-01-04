@@ -33,6 +33,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import okhttp3.Call;
+import okhttp3.FormBody;
+import okhttp3.Request;
 
 public class NewUploadService extends Service {
     private Context context;
@@ -145,7 +147,6 @@ public class NewUploadService extends Service {
         }
         if (map.size() > 0) {
             L.e("--->>>url:" + Urls.UPLOAD_HOLE_NEW + strParams);
-            L.e("--->>>map:" + map.toString());
             builder.addHeader("Connection", "close").url(Urls.UPLOAD_HOLE_NEW + strParams).params(map);
             builder.build().execute(new StringCallback() {
                 @Override
@@ -159,6 +160,11 @@ public class NewUploadService extends Service {
                     super.inProgress(progress, t, id);
                     int size = (int) Math.abs(progress * 100);
                     sendReceiver(size);
+                }
+
+                @Override
+                public void onBefore(Request request, int id) {
+                    super.onBefore(request, id);
                 }
 
                 @Override

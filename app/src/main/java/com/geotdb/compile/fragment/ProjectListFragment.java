@@ -325,9 +325,9 @@ public class ProjectListFragment extends Fragment {
             //用于分页加载的sql 这里的index-1 第二页的时候是跳过一个size
             String pageSql = String.format("limit (" + Urls.PAGESIZE + ") offset " + Urls.PAGESIZE * (index - 1));//size:每页显示条数，index页码
             //拼接sql语句，带分页 没有关联用户名，调试用
-//            String sql = "select p.id,p.code,p.fullName,p.leader,p.state,(" + holeCount + ")as holeCount,p.updateTime,p.mapPic,(" + uploadedCount + ") as uploadedCount,(" + notUploadCount + ") as notUploadCount,p.serialNumber from project p order by p.updateTime desc " + pageSql;
+            String sql = "select p.id,p.code,p.fullName,p.leader,p.state,(" + holeCount + ")as holeCount,p.updateTime,p.mapPic,(" + uploadedCount + ") as uploadedCount,(" + notUploadCount + ") as notUploadCount,p.serialNumber from project p order by p.updateTime desc " + pageSql;
             //添加  recordPerson=''条件，查询老版本中的项目
-            String sql = "select p.id,p.code,p.fullName,p.leader,p.state,(" + holeCount + ")as holeCount,p.updateTime,p.mapPic,(" + uploadedCount + ") as uploadedCount,(" + notUploadCount + ") as notUploadCount,p.serialNumber from project p where recordPerson='' or recordPerson='" + localUser.getId() + "'order by p.updateTime desc " + pageSql;
+//            String sql = "select p.id,p.code,p.fullName,p.leader,p.state,(" + holeCount + ")as holeCount,p.updateTime,p.mapPic,(" + uploadedCount + ") as uploadedCount,(" + notUploadCount + ") as notUploadCount,p.serialNumber from project p where recordPerson='' or recordPerson='" + localUser.getId() + "'order by p.updateTime desc " + pageSql;
             //这里获取总记录条数
             count = (int) dao.countOf();
             L.e("TAG", "sql---->>>" + sql);
