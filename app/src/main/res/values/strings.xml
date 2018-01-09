@@ -3,9 +3,9 @@
 
     <!--<string name="app_name">新版勘察</string>-->
 
-    <string name="app_name">新疆勘察</string>
+    <!--<string name="app_name">新疆勘察</string>-->
     <!--<string name="app_name">辽宁勘察</string>-->
-    <!--<string name="app_name">北京勘察</string>-->
+    <string name="app_name">北京勘察</string>
     <!--<string name="app_name">本地勘察</string>-->
 
 

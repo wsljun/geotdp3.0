@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.geotdb.compile"
@@ -40,85 +40,48 @@ def releaseTime() {
     return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
 }
 
-repositories {
-    jcenter()
-    maven { url "https://jitpack.io" }
-    google()
-}
-
-
 
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
     compile 'com.github.bumptech.glide:glide:3.6.0'
-    compile 'de.hdodenhof:circleimageview:1.3.0'
-
-    //圆形浮动菜单按钮
-    compile 'com.github.clans:fab:1.5.4'
-
-    //    compile 'com.afollestad:material-dialogs:0.7.6.0'
-
-    //文本控件
-    compile 'com.rengwuxian.materialedittext:library:2.1.4'
-
-    //按钮之类的很多东西
-
-    //compile project(':MaterialDesign')
-
-    //开源相机项目，已删除
-
-    //    compile project(':lib_focal')
-    compile 'net.qiujuer.genius:ui:1.0.1'
-    compile 'net.qiujuer.genius:blur:1.0.0'
-    compile 'net.qiujuer.genius:res:1.0.0'
-    compile 'net.qiujuer.genius:kit:1.0.0'
-
-    //compile 'com.github.navasmdc:MaterialDesign:1.5@aar' //由于参数命名冲突,所以只能本地引用
-
-    //下拉选择框  //https://github.com/Lesilva/BetterSpinner
-    compile 'com.weiwangcn.betterspinner:library-material:1.1.0'
-
-    //无缝跳转特效
-    compile 'com.kogitune:pre-lollipop-activity-transition:1.0.0'
-
-    //超快和轻松为RecyclerView添加头部
-    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
-
-    //进度条
-    compile 'com.jakewharton:butterknife:7.0.1'
-
-    //compile 'me.zhanghai.android.materialprogressbar:library:1.1.6'
-
-    //各种弹出框(数字,日期)
-    implementation project(':lib_betterpickers')
-
-    //compile 'com.code-troopers.betterpickers:library:2.5.3'
-
-    //弹出框
-    compile 'com.afollestad.material-dialogs:core:0.8.5.9'
-
-    //集成组件
-
-    //compile 'org.xutils:xutils:3.3.4'
-
-    //6.0权限处理
-    annotationProcessor 'com.zhy:mpermission-compiler:1.0.0'
-    compile 'com.zhy:mpermission-api:1.0.0'
-    compile 'com.zhy:okhttputils:2.6.2'
-
-    //小视频录制
-
-    //    compile 'com.mabeijianxi:small-video-record:1.0.2'
-    implementation project(':SmallVideoLib')
-    compile files('libs/AMap_Location_V3.4.0_20170427.jar')
-    compile files('libs/Msc.jar')
-    compile files('libs/AMap3DMap_5.0.0_AMapNavi_5.1.0_20170515.jar')
-    compile 'id.zelory:compressor:2.1.0'
     implementation 'com.android.support:design:27.0.2'
     implementation 'com.android.support:cardview-v7:27.0.2'
     implementation 'com.android.support:recyclerview-v7:27.0.2'
 
-    compile 'com.android.support:multidex:1.0.0'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    //圆形浮动菜单按钮
+    compile 'com.github.clans:fab:1.5.4'
+    //文本控件
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    compile 'net.qiujuer.genius:ui:1.0.1'
+    compile 'net.qiujuer.genius:blur:1.0.0'
+    compile 'net.qiujuer.genius:res:1.0.0'
+    compile 'net.qiujuer.genius:kit:1.0.0'
+    //下拉选择框  //https://github.com/Lesilva/BetterSpinner
+    compile 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    //无缝跳转特效
+    compile 'com.kogitune:pre-lollipop-activity-transition:1.0.0'
+    //超快和轻松为RecyclerView添加头部
+    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
+    //进度条
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //弹出框
+    compile 'com.afollestad.material-dialogs:core:0.8.5.9'
+    //6.0权限处理
+    compile 'com.zhy:mpermission-compiler:1.0.0'
+    compile 'com.zhy:mpermission-api:1.0.0'
+    //封装okhttp3
+    compile 'com.zhy:okhttputils:2.6.2'
+    //小视频录制
+    implementation project(':SmallVideoLib')
+    //各种弹出框(数字,日期)
+    implementation project(':lib_betterpickers')
+    //图片压缩
+    compile 'id.zelory:compressor:2.1.0'
+    //解决Dex超出方法数的限制问题
+    compile 'com.android.support:multidex:1.0.2'
+
 }
 
 allprojects {

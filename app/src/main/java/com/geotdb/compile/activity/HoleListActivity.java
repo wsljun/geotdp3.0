@@ -645,14 +645,14 @@ public class HoleListActivity extends BaseAppCompatActivity {
         @Override
         public void onItemClick(int position) {
             //点击勘察点列表得到relateHole
-            if(relateHoleDialog.holeList==null){
+            if (relateHoleDialog.holeList == null) {
                 relateHole = relateList.get(position);
-            }else{
+            } else {
                 relateHole = relateHoleDialog.holeList.get(position);
             }
             relateHoleDialog.dismiss();
             //遍历数据库，查找是否关联
-            if (holeDao.checkRelated(relateHole.getId(),project.getId())) {
+            if (holeDao.checkRelated(relateHole.getId(), project.getId())) {
                 ToastUtil.showToastS(context, "该发布点本地已经存在关联");
             } else {
                 doRelateForIntrnet(relateHole.getId());
@@ -711,7 +711,7 @@ public class HoleListActivity extends BaseAppCompatActivity {
         if (checkList != null && checkList.size() > 0) {
             for (Hole relateHole : checkList) {
                 //遍历数据库，查找是否关联
-                if (holeDao.checkRelated(relateHole.getId(),project.getId())) {
+                if (holeDao.checkRelated(relateHole.getId(), project.getId())) {
                     ToastUtil.showToastS(context, "该发布点本地已经存在关联");
                 } else {
                     showProgressDialog(false);
