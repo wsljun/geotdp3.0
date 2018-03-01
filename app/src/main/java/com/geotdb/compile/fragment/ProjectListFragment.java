@@ -491,7 +491,7 @@ public class ProjectListFragment extends Fragment {
             holder.mpr.setUseIntrinsicPadding(false);
 //            holder.mpr.setShowTrack(false);
             int uploadedCount = holder.vo.getUploadedCount();          //已上传
-            int notUploadCount = holder.vo.getNotUploadCount();         //未上传
+            int notUploadCount = holder.vo.getNotUploadCount()-1;         //未上传 项目级别不可上传，计数时去掉项目本身
             if (uploadedCount != 0) {
                 int count = uploadedCount + notUploadCount;         // 总条数
                 int progress = Integer.valueOf(uploadedCount * 100 / count);

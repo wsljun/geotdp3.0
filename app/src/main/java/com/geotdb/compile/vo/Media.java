@@ -18,6 +18,7 @@ package com.geotdb.compile.vo;
 
 
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.amap.api.location.AMapLocation;
 import com.geotdb.compile.db.HoleDao;
@@ -237,20 +238,34 @@ public class Media implements Serializable {
     public static Map<String, String> getMap(List<Media> list, String serialNumber) {
         Map<String, String> map = new ConcurrentHashMap<>();
         for (int i = 0; i < list.size(); i++) {
+            Media media = list.get(i);
             map.put("media[" + i + "].projectID", serialNumber);
-            map.put("media[" + i + "].id", list.get(i).getId() == null ? "" : list.get(i).getId());
-            map.put("media[" + i + "].name", list.get(i).getName() == null ? "" : list.get(i).getName());
-            map.put("media[" + i + "].holeID", list.get(i).getHoleID() == null ? "" : list.get(i).getHoleID());
-            map.put("media[" + i + "].recordID", list.get(i).getRecordID() == null ? "" : list.get(i).getRecordID());
-            map.put("media[" + i + "].gpsID", list.get(i).getGpsID() == null ? "" : list.get(i).getGpsID());
-            map.put("media[" + i + "].createTime", list.get(i).getCreateTime() == null ? "" : list.get(i).getCreateTime());
-            map.put("media[" + i + "].createUser", list.get(i).getCreateUser() == null ? "" : list.get(i).getCreateUser());
-            map.put("media[" + i + "].uploadUser", list.get(i).getUploadUser() == null ? "" : list.get(i).getUploadUser());
-            map.put("media[" + i + "].type", list.get(i).getType() == null ? "" : list.get(i).getType());
-            map.put("media[" + i + "].state", list.get(i).getState() == null ? "" : list.get(i).getState());
-            map.put("media[" + i + "].internetPath", list.get(i).getInternetPath() == null ? "" : list.get(i).getInternetPath());
-            map.put("media[" + i + "].remark", list.get(i).getRemark() == null ? "" : list.get(i).getRemark());
-
+            map.put("media[" + i + "].id", media.getId() == null ? "" : media.getId());
+            map.put("media[" + i + "].name", media.getName() == null ? "" : media.getName());
+            map.put("media[" + i + "].holeID", media.getHoleID() == null ? "" : media.getHoleID());
+            map.put("media[" + i + "].recordID", media.getRecordID() == null ? "" : media.getRecordID());
+            map.put("media[" + i + "].gpsID", media.getGpsID() == null ? "" : media.getGpsID());
+            if(!TextUtils.isEmpty(media.getCreateTime())){
+                map.put("media[" + i + "].createTime", media.getCreateTime());
+            }
+            if(!TextUtils.isEmpty(media.getCreateUser())){
+                map.put("media[" + i + "].createUser", media.getCreateUser());
+            }
+            if(!TextUtils.isEmpty(media.getUploadUser())){
+                map.put("media[" + i + "].uploadUser", media.getUploadUser());
+            }
+            if(!TextUtils.isEmpty(media.getType())){
+                map.put("media[" + i + "].type", media.getType());
+            }
+            if(!TextUtils.isEmpty(media.getState())){
+                map.put("media[" + i + "].state", media.getState());
+            }
+            if(!TextUtils.isEmpty(media.getInternetPath())){
+                map.put("media[" + i + "].internetPath", media.getInternetPath());
+            }
+            if(!TextUtils.isEmpty(media.getRemark())){
+                map.put("media[" + i + "].remark", media.getRemark());
+            }
             //如果是文件加，只能是video的文件夹
             File file = new File(list.get(i).getLocalPath());
             if (file.isDirectory()) {

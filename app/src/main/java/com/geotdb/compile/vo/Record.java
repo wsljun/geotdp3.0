@@ -878,87 +878,243 @@ public class Record implements Serializable, Cloneable {
     public static Map<String, String> getMap(List<Record> list, String serialNumber) {
         Map<String, String> map = new ConcurrentHashMap<>();
         for (int i = 0; i < list.size(); i++) {
+            Record record = list.get(i);
             map.put("record[" + i + "].projectID", serialNumber);
-            map.put("record[" + i + "].updateID", list.get(i).getUpdateId() == null ? "" : list.get(i).getUpdateId());
-            map.put("record[" + i + "].id", list.get(i).getId() == null ? "" : list.get(i).getId());
-            map.put("record[" + i + "].code", list.get(i).getCode() == null ? "" : list.get(i).getCode());
-            map.put("record[" + i + "].holeID", list.get(i).getHoleID() == null ? "" : list.get(i).getHoleID());
-            map.put("record[" + i + "].type", list.get(i).getType() == null ? "" : list.get(i).getType());
-            map.put("record[" + i + "].title", list.get(i).getTitle() == null ? "" : list.get(i).getTitle());
-            map.put("record[" + i + "].beginDepth", list.get(i).getBeginDepth() == null ? "" : list.get(i).getBeginDepth());
-            map.put("record[" + i + "].endDepth", list.get(i).getEndDepth() == null ? "" : list.get(i).getEndDepth());
-            map.put("record[" + i + "].createTime", list.get(i).getCreateTime() == null ? "" : list.get(i).getCreateTime());
-            map.put("record[" + i + "].description", list.get(i).getDescription() == null ? "" : list.get(i).getDescription());
-            map.put("record[" + i + "].updateTime", list.get(i).getUpdateTime() == null ? "" : list.get(i).getUpdateTime());
-            map.put("record[" + i + "].recordPerson", list.get(i).getRecordPerson() == null ? "" : list.get(i).getRecordPerson());
-            map.put("record[" + i + "].operatePerson", list.get(i).getOperatePerson() == null ? "" : list.get(i).getOperatePerson());
-            map.put("record[" + i + "].frequencyType", list.get(i).getFrequencyType() == null ? "" : list.get(i).getFrequencyType());
-            map.put("record[" + i + "].frequencyMode", list.get(i).getFrequencyMode() == null ? "" : list.get(i).getFrequencyMode());
-            map.put("record[" + i + "].aperture", list.get(i).getAperture() == null ? "" : list.get(i).getAperture());
-            map.put("record[" + i + "].earthType", list.get(i).getEarthType() == null ? "" : list.get(i).getEarthType());
-            map.put("record[" + i + "].testType", list.get(i).getTestType() == null ? "" : list.get(i).getTestType());
-            map.put("record[" + i + "].waterDepth", list.get(i).getWaterDepth() == null ? "" : list.get(i).getWaterDepth());
-            map.put("record[" + i + "].getMode", list.get(i).getGetMode() == null ? "" : list.get(i).getGetMode());
-            map.put("record[" + i + "].layerType", list.get(i).getLayerType() == null ? "" : list.get(i).getLayerType());
-            map.put("record[" + i + "].layerName", list.get(i).getLayerName() == null ? "" : list.get(i).getLayerName());
-            map.put("record[" + i + "].weathering", list.get(i).getWeathering() == null ? "" : list.get(i).getWeathering());
-            map.put("record[" + i + "].era", list.get(i).getEra() == null ? "" : list.get(i).getEra());
-            map.put("record[" + i + "].causes", list.get(i).getCauses() == null ? "" : list.get(i).getCauses());
-            map.put("record[" + i + "].wzcf", list.get(i).getWzcf() == null ? "" : list.get(i).getWzcf());
-            map.put("record[" + i + "].ys", list.get(i).getYs() == null ? "" : list.get(i).getYs());
-            map.put("record[" + i + "].klzc", list.get(i).getKlzc() == null ? "" : list.get(i).getKlzc());
-            map.put("record[" + i + "].klxz", list.get(i).getKlxz() == null ? "" : list.get(i).getKlxz());
-            map.put("record[" + i + "].klpl", list.get(i).getKlpl() == null ? "" : list.get(i).getKlpl());
-            map.put("record[" + i + "].kljp", list.get(i).getKljp() == null ? "" : list.get(i).getKljp());
-            map.put("record[" + i + "].sd", list.get(i).getSd() == null ? "" : list.get(i).getSd());
-            map.put("record[" + i + "].msd", list.get(i).getMsd() == null ? "" : list.get(i).getMsd());
-            map.put("record[" + i + "].jyx", list.get(i).getJyx() == null ? "" : list.get(i).getJyx());
-            map.put("record[" + i + "].zt", list.get(i).getZt() == null ? "" : list.get(i).getZt());
-            map.put("record[" + i + "].bhw", list.get(i).getBhw() == null ? "" : list.get(i).getBhw());
-            map.put("record[" + i + "].ftfchd", list.get(i).getFtfchd() == null ? "" : list.get(i).getFtfchd());
-            map.put("record[" + i + "].fzntfchd", list.get(i).getFzntfchd() == null ? "" : list.get(i).getFzntfchd());
-            map.put("record[" + i + "].jc", list.get(i).getJc() == null ? "" : list.get(i).getJc());
-            map.put("record[" + i + "].kx", list.get(i).getKx() == null ? "" : list.get(i).getKx());
-            map.put("record[" + i + "].czjl", list.get(i).getCzjl() == null ? "" : list.get(i).getCzjl());
-            map.put("record[" + i + "].ybljx", list.get(i).getYbljx() == null ? "" : list.get(i).getYbljx());
-            map.put("record[" + i + "].ybljd", list.get(i).getYbljd() == null ? "" : list.get(i).getYbljd());
-            map.put("record[" + i + "].jdljx", list.get(i).getJdljx() == null ? "" : list.get(i).getJdljx());
-            map.put("record[" + i + "].jdljd", list.get(i).getJdljd() == null ? "" : list.get(i).getJdljd());
-            map.put("record[" + i + "].zdlj", list.get(i).getZdlj() == null ? "" : list.get(i).getZdlj());
-            map.put("record[" + i + "].mycf", list.get(i).getMycf() == null ? "" : list.get(i).getMycf());
-            map.put("record[" + i + "].fhcd", list.get(i).getFhcd() == null ? "" : list.get(i).getFhcd());
-            map.put("record[" + i + "].tcw", list.get(i).getTcw() == null ? "" : list.get(i).getTcw());
-            map.put("record[" + i + "].kwzc", list.get(i).getKwzc() == null ? "" : list.get(i).getKwzc());
-            map.put("record[" + i + "].zycf", list.get(i).getZycf() == null ? "" : list.get(i).getZycf());
-            map.put("record[" + i + "].cycf", list.get(i).getCycf() == null ? "" : list.get(i).getCycf());
-            map.put("record[" + i + "].djnd", list.get(i).getDjnd() == null ? "" : list.get(i).getDjnd());
-            map.put("record[" + i + "].hsl", list.get(i).getHsl() == null ? "" : list.get(i).getHsl());
-            map.put("record[" + i + "].jycd", list.get(i).getJycd() == null ? "" : list.get(i).getJycd());
-            map.put("record[" + i + "].wzcd", list.get(i).getWzcd() == null ? "" : list.get(i).getWzcd());
-            map.put("record[" + i + "].jbzldj", list.get(i).getJbzldj() == null ? "" : list.get(i).getJbzldj());
-            map.put("record[" + i + "].kwx", list.get(i).getKwx() == null ? "" : list.get(i).getKwx());
-            map.put("record[" + i + "].jglx", list.get(i).getJglx() == null ? "" : list.get(i).getJglx());
-            map.put("record[" + i + "].powerType", list.get(i).getPowerType() == null ? "" : list.get(i).getPowerType());
-            map.put("record[" + i + "].drillLength", list.get(i).getDrillLength() == null ? "" : list.get(i).getDrillLength());
-            map.put("record[" + i + "].begin1", list.get(i).getBegin1() == null ? "" : list.get(i).getBegin1());
-            map.put("record[" + i + "].end1", list.get(i).getEnd1() == null ? "" : list.get(i).getEnd1());
-            map.put("record[" + i + "].blow1", list.get(i).getBlow1() == null ? "" : list.get(i).getBlow1());
-            map.put("record[" + i + "].begin2", list.get(i).getBegin2() == null ? "" : list.get(i).getBegin2());
-            map.put("record[" + i + "].end2", list.get(i).getEnd2() == null ? "" : list.get(i).getEnd2());
-            map.put("record[" + i + "].blow2", list.get(i).getBlow2() == null ? "" : list.get(i).getBlow2());
-            map.put("record[" + i + "].begin3", list.get(i).getBegin3() == null ? "" : list.get(i).getBegin3());
-            map.put("record[" + i + "].end3", list.get(i).getEnd3() == null ? "" : list.get(i).getEnd3());
-            map.put("record[" + i + "].blow3", list.get(i).getBlow3() == null ? "" : list.get(i).getBlow3());
-            map.put("record[" + i + "].begin4", list.get(i).getBegin4() == null ? "" : list.get(i).getBegin4());
-            map.put("record[" + i + "].end4", list.get(i).getEnd4() == null ? "" : list.get(i).getEnd4());
-            map.put("record[" + i + "].blow4", list.get(i).getBlow4() == null ? "" : list.get(i).getBlow4());
-            map.put("record[" + i + "].waterType", list.get(i).getWaterType() == null ? "" : list.get(i).getWaterType());
-            map.put("record[" + i + "].shownWaterLevel", list.get(i).getShownWaterLevel() == null ? "" : list.get(i).getShownWaterLevel());
-            map.put("record[" + i + "].stillWaterLevel", list.get(i).getStillWaterLevel() == null ? "" : list.get(i).getStillWaterLevel());
-            map.put("record[" + i + "].shownTime", list.get(i).getShownTime() == null ? "" : list.get(i).getShownTime());
-            map.put("record[" + i + "].stillTime", list.get(i).getStillTime() == null ? "" : list.get(i).getStillTime());
+            map.put("record[" + i + "].id", record.getId());
+            map.put("record[" + i + "].code", record.getCode());
+            map.put("record[" + i + "].holeID", record.getHoleID());
+            if (!TextUtils.isEmpty(record.getUpdateId())) {
+                map.put("record[" + i + "].updateID", record.getUpdateId());
+            }
+            if (!TextUtils.isEmpty(record.getType())) {
+                map.put("record[" + i + "].type", record.getType());
+            }
+            if (!TextUtils.isEmpty(record.getTitle())) {
+                map.put("record[" + i + "].title", record.getTitle());
+            }
+            if (!TextUtils.isEmpty(record.getBeginDepth())) {
+                map.put("record[" + i + "].beginDepth", record.getBeginDepth());
+            }
+            if (!TextUtils.isEmpty(record.getEndDepth())) {
+                map.put("record[" + i + "].endDepth", record.getEndDepth());
+            }
+            if (!TextUtils.isEmpty(record.getCreateTime())) {
+                map.put("record[" + i + "].createTime", record.getCreateTime());
+            }
+            if (!TextUtils.isEmpty(record.getDescription())) {
+                map.put("record[" + i + "].description", record.getDescription());
+            }
+            if (!TextUtils.isEmpty(record.getUpdateTime())) {
+                map.put("record[" + i + "].updateTime", record.getUpdateTime());
+            }
+            if (!TextUtils.isEmpty(record.getRecordPerson())) {
+                map.put("record[" + i + "].recordPerson", record.getRecordPerson());
+            }
+            if (!TextUtils.isEmpty(record.getOperatePerson())) {
+                map.put("record[" + i + "].operatePerson", record.getOperatePerson());
+            }
+            if (!TextUtils.isEmpty(record.getFrequencyType())) {
+                map.put("record[" + i + "].frequencyType", record.getFrequencyType());
+            }
+            if (!TextUtils.isEmpty(record.getFrequencyMode())) {
+                map.put("record[" + i + "].frequencyMode", record.getFrequencyMode());
+            }
+            if (!TextUtils.isEmpty(record.getAperture())) {
+                map.put("record[" + i + "].aperture", record.getAperture());
+            }
+            if (!TextUtils.isEmpty(record.getEarthType())) {
+                map.put("record[" + i + "].earthType", record.getEarthType());
+            }
+            if (!TextUtils.isEmpty(record.getTestType())) {
+                map.put("record[" + i + "].testType", record.getTestType());
+            }
+            if (!TextUtils.isEmpty(record.getWaterDepth())) {
+                map.put("record[" + i + "].waterDepth", record.getWaterDepth());
+            }
+            if (!TextUtils.isEmpty(record.getGetMode())) {
+                map.put("record[" + i + "].getMode", record.getGetMode());
+            }
+            if (!TextUtils.isEmpty(record.getLayerType())) {
+                map.put("record[" + i + "].layerType", record.getLayerType());
+            }
+            if (!TextUtils.isEmpty(record.getLayerName())) {
+                map.put("record[" + i + "].layerName", record.getLayerName());
+            }
+            if (!TextUtils.isEmpty(record.getWeathering())) {
+                map.put("record[" + i + "].weathering", record.getWeathering());
+            }
+            if (!TextUtils.isEmpty(record.getEra())) {
+                map.put("record[" + i + "].era", record.getEra());
+            }
+            if (!TextUtils.isEmpty(record.getCauses())) {
+                map.put("record[" + i + "].causes", record.getCauses());
+            }
+            if (!TextUtils.isEmpty(record.getWzcf())) {
+                map.put("record[" + i + "].wzcf", record.getWzcf());
+            }
+            if (!TextUtils.isEmpty(record.getYs())) {
+                map.put("record[" + i + "].ys", record.getYs());
+            }
+            if (!TextUtils.isEmpty(record.getKlzc())) {
+                map.put("record[" + i + "].klzc", record.getKlzc());
+            }
+            if (!TextUtils.isEmpty(record.getKlxz())) {
+                map.put("record[" + i + "].klxz", record.getKlxz());
+            }
+            if (!TextUtils.isEmpty(record.getKlpl())) {
+                map.put("record[" + i + "].klpl", record.getKlpl());
+            }
+            if (!TextUtils.isEmpty(record.getKljp())) {
+                map.put("record[" + i + "].kljp", record.getKljp());
+            }
+            if (!TextUtils.isEmpty(record.getSd())) {
+                map.put("record[" + i + "].sd", record.getSd());
+            }
+            if (!TextUtils.isEmpty(record.getMsd())) {
+                map.put("record[" + i + "].msd", record.getMsd());
+            }
+            if (!TextUtils.isEmpty(record.getJyx())) {
+                map.put("record[" + i + "].jyx", record.getJyx());
+            }
+            if (!TextUtils.isEmpty(record.getZt())) {
+                map.put("record[" + i + "].zt", record.getZt());
+            }
+            if (!TextUtils.isEmpty(record.getBhw())) {
+                map.put("record[" + i + "].bhw", record.getBhw());
+            }
+            if (!TextUtils.isEmpty(record.getFtfchd())) {
+                map.put("record[" + i + "].ftfchd", record.getFtfchd());
+            }
+            if (!TextUtils.isEmpty(record.getFzntfchd())) {
+                map.put("record[" + i + "].fzntfchd", record.getFzntfchd());
+            }
+            if (!TextUtils.isEmpty(record.getJc())) {
+                map.put("record[" + i + "].jc", record.getJc());
+            }
+            if (!TextUtils.isEmpty(record.getKx())) {
+                map.put("record[" + i + "].kx", record.getKx());
+            }
+            if (!TextUtils.isEmpty(record.getCzjl())) {
+                map.put("record[" + i + "].czjl", record.getCzjl());
+            }
+            if (!TextUtils.isEmpty(record.getYbljx())) {
+                map.put("record[" + i + "].ybljx", record.getYbljx());
+            }
+            if (!TextUtils.isEmpty(record.getYbljd())) {
+                map.put("record[" + i + "].ybljd", record.getYbljd());
+            }
+            if (!TextUtils.isEmpty(record.getJdljx())) {
+                map.put("record[" + i + "].jdljx", record.getJdljx());
+            }
+            if (!TextUtils.isEmpty(record.getJdljd())) {
+                map.put("record[" + i + "].jdljd", record.getJdljd());
+            }
+            if (!TextUtils.isEmpty(record.getZdlj())) {
+                map.put("record[" + i + "].zdlj", record.getZdlj());
+            }
+            if (!TextUtils.isEmpty(record.getMycf())) {
+                map.put("record[" + i + "].mycf", record.getMycf());
+            }
+            if (!TextUtils.isEmpty(record.getFhcd())) {
+                map.put("record[" + i + "].fhcd", record.getFhcd());
+            }
+            if (!TextUtils.isEmpty(record.getTcw())) {
+                map.put("record[" + i + "].tcw", record.getTcw());
+            }
+            if (!TextUtils.isEmpty(record.getKwzc())) {
+                map.put("record[" + i + "].kwzc", record.getKwzc());
+            }
+            if (!TextUtils.isEmpty(record.getZycf())) {
+                map.put("record[" + i + "].zycf", record.getZycf());
+            }
+            if (!TextUtils.isEmpty(record.getCycf())) {
+                map.put("record[" + i + "].cycf", record.getCycf());
+            }
+            if (!TextUtils.isEmpty(record.getDjnd())) {
+                map.put("record[" + i + "].djnd", record.getDjnd());
+            }
+            if (!TextUtils.isEmpty(record.getHsl())) {
+                map.put("record[" + i + "].hsl", record.getHsl());
+            }
+            if (!TextUtils.isEmpty(record.getJycd())) {
+                map.put("record[" + i + "].jycd", record.getJycd());
+            }
+            if (!TextUtils.isEmpty(record.getWzcd())) {
+                map.put("record[" + i + "].wzcd", record.getWzcd());
+            }
+            if (!TextUtils.isEmpty(record.getJbzldj())) {
+                map.put("record[" + i + "].jbzldj", record.getJbzldj());
+            }
+            if (!TextUtils.isEmpty(record.getKwx())) {
+                map.put("record[" + i + "].kwx", record.getKwx());
+            }
+            if (!TextUtils.isEmpty(record.getJglx())) {
+                map.put("record[" + i + "].jglx", record.getJglx());
+            }
+            if (!TextUtils.isEmpty(record.getPowerType())) {
+                map.put("record[" + i + "].powerType", record.getPowerType());
+            }
+            if (!TextUtils.isEmpty(record.getDrillLength())) {
+                map.put("record[" + i + "].drillLength", record.getDrillLength());
+            }
+            if (!TextUtils.isEmpty(record.getBegin1())) {
+                map.put("record[" + i + "].begin1", record.getBegin1());
+            }
+            if (!TextUtils.isEmpty(record.getEnd1())) {
+                map.put("record[" + i + "].end1", record.getEnd1());
+            }
+            if (!TextUtils.isEmpty(record.getBlow1())) {
+                map.put("record[" + i + "].blow1", record.getBlow1());
+            }
+            if (!TextUtils.isEmpty(record.getBegin2())) {
+                map.put("record[" + i + "].begin2", record.getBegin2());
+            }
+            if (!TextUtils.isEmpty(record.getEnd2())) {
+                map.put("record[" + i + "].end2", record.getEnd2());
+            }
+            if (!TextUtils.isEmpty(record.getBlow2())) {
+                map.put("record[" + i + "].blow2", record.getBlow2());
+            }
+            if (!TextUtils.isEmpty(record.getBegin3())) {
+                map.put("record[" + i + "].begin3", record.getBegin3());
+            }
+            if (!TextUtils.isEmpty(record.getEnd3())) {
+                map.put("record[" + i + "].end3", record.getEnd3());
+            }
+            if (!TextUtils.isEmpty(record.getBlow3())) {
+                map.put("record[" + i + "].blow3", record.getBlow3());
+            }
+            if (!TextUtils.isEmpty(record.getBegin4())) {
+                map.put("record[" + i + "].begin4", record.getBegin4());
+            }
+            if (!TextUtils.isEmpty(record.getEnd4())) {
+                map.put("record[" + i + "].end4", record.getEnd4());
+            }
+            if (!TextUtils.isEmpty(record.getBlow4())) {
+                map.put("record[" + i + "].blow4", record.getBlow4());
+            }
+            if (!TextUtils.isEmpty(record.getWaterType())) {
+                map.put("record[" + i + "].waterType", record.getWaterType());
+            }
+            if (!TextUtils.isEmpty(record.getShownWaterLevel())) {
+                map.put("record[" + i + "].shownWaterLevel", record.getShownWaterLevel());
+            }
+            if (!TextUtils.isEmpty(record.getStillWaterLevel())) {
+                map.put("record[" + i + "].stillWaterLevel", record.getStillWaterLevel());
+            }
+            if (!TextUtils.isEmpty(record.getShownTime())) {
+                map.put("record[" + i + "].shownTime", record.getShownTime());
+            }
+            if (!TextUtils.isEmpty(record.getStillTime())) {
+                map.put("record[" + i + "].stillTime", record.getStillTime());
+            }
+
         }
         return map;
+    }
+
+    public void mapPut() {
+
     }
 
     public void init(Hole hole) {

@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.geotdb.compile.utils.Key;
 import com.geotdb.compile.db.DBHelper;
@@ -157,28 +158,65 @@ public class Hole implements Serializable {
         params.put("hole.relateID", relateID);
         params.put("hole.id", id);
         params.put("hole.code", code);
-        params.put("hole.attribute", attribute == null ? "" : attribute);
-        params.put("hole.createTime", createTime == null ? "" : createTime);
-        params.put("hole.updateTime", updateTime == null ? "" : updateTime);
-        params.put("hole.type", type == null ? "" : type);
-        params.put("hole.elevation", elevation == null ? "" : elevation);
-        params.put("hole.beginTime", beginTime == null ? "" : beginTime);
-        params.put("hole.endTime", endTime == null ? "" : endTime);
-        params.put("hole.inputPerson", inputPerson == null ? "" : inputPerson);
-        params.put("hole.operatePerson", operatePerson == null ? "" : operatePerson);
-        params.put("hole.operateCode", operateCode == null ? "" : operateCode);
+        if(!TextUtils.isEmpty(attribute)){
+            params.put("hole.attribute",attribute);
+        }
+        if(!TextUtils.isEmpty(createTime)){
+            params.put("hole.createTime", createTime);
+        }
+        if(!TextUtils.isEmpty(updateTime)){
+            params.put("hole.updateTime", updateTime );
+        }
+        if(!TextUtils.isEmpty(type)){
+            params.put("hole.type",type);
+        }
+        if(!TextUtils.isEmpty(elevation)){
+            params.put("hole.elevation", elevation);
+        }
+        if(!TextUtils.isEmpty(beginTime)){
+            params.put("hole.beginTime", beginTime);
+        }
+        if(!TextUtils.isEmpty(endTime)){
+            params.put("hole.endTime",  endTime);
+        }
+        if(!TextUtils.isEmpty(inputPerson)){
+            params.put("hole.inputPerson", inputPerson);
+        }
+        if(!TextUtils.isEmpty(operatePerson)){
+            params.put("hole.operatePerson", operatePerson);
+        }
+        if(!TextUtils.isEmpty(operateCode)){
+            params.put("hole.operateCode",operateCode);
+        }
+        if(!TextUtils.isEmpty(longitude)){
+            params.put("hole.longitude",longitude);
+        }
+        if(!TextUtils.isEmpty(latitude)){
+            params.put("hole.latitude",latitude);
+        }
+        if(!TextUtils.isEmpty(radius)){
+            params.put("hole.radius", radius);
+        }
+        if(!TextUtils.isEmpty(locationState)){
+            params.put("hole.locationState", locationState );
+        }
+        if(!TextUtils.isEmpty(projectName)){
+            params.put("hole.projectName", projectName);
+        }
+        if(!TextUtils.isEmpty(recordsCount)){
+            params.put("hole.recordsCount", recordsCount);
+        }
 
-        params.put("hole.longitude", longitude == null ? "" : longitude);
-        params.put("hole.latitude", latitude == null ? "" : latitude);
-        params.put("hole.radius", radius == null ? "" : radius);
-        params.put("hole.locationState", locationState == null ? "" : locationState);
-        params.put("hole.projectName", projectName == null ? "" : projectName);
-        params.put("hole.recordsCount", recordsCount == null ? "" : recordsCount);
-
-        params.put("hole.mapLatitude", mapLatitude == null ? "" : mapLatitude);
-        params.put("hole.mapLongitude", mapLongitude == null ? "" : mapLongitude);
-        params.put("hole.mapTime", mapTime == null ? "" : mapTime);
-        DateUtil.traversal(params);
+        if(!TextUtils.isEmpty(mapLatitude)){
+            params.put("hole.mapLatitude", mapLatitude);
+        }
+        if(!TextUtils.isEmpty(mapLongitude)){
+            params.put("hole.mapLongitude", mapLongitude);
+        }
+        if(!TextUtils.isEmpty(mapTime)){
+            params.put("hole.mapTime", mapTime);
+        }
+//        DateUtil.traversal(params);
         return params;
 
     }

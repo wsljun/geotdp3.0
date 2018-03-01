@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
@@ -23,9 +22,11 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/project_lr"
             android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
             android:layout_toEndOf="@+id/project_lr"
-            android:lines="1"
-            android:text="我是我是标题我是标题"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="我是我是标题我我是我是标题我是标题是标题"
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
 

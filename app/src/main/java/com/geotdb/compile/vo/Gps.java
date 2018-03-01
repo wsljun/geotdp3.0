@@ -18,6 +18,7 @@ package com.geotdb.compile.vo;
 
 
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.amap.api.location.AMapLocation;
 import com.geotdb.compile.db.GpsDao;
@@ -182,16 +183,29 @@ public class Gps implements Serializable {
     public static Map<String, String> getMap(List<Gps> list, String serialNumber) {
         Map<String, String> map = new ConcurrentHashMap<>();
         for (int i = 0; i < list.size(); i++) {
+            Gps gps = list.get(i);
             map.put("gps[" + i + "].projectID", serialNumber);
-            map.put("gps[" + i + "].id", list.get(i).getId() == null ? "" : list.get(i).getId());
-            map.put("gps[" + i + "].holeID", list.get(i).getHoleID() == null ? "" : list.get(i).getHoleID());
-            map.put("gps[" + i + "].recordID", list.get(i).getRecordID() == null ? "" : list.get(i).getRecordID());
-            map.put("gps[" + i + "].mediaID", list.get(i).getMediaID() == null ? "" : list.get(i).getMediaID());
-            map.put("gps[" + i + "].type", list.get(i).getType() == null ? "" : list.get(i).getType());
-            map.put("gps[" + i + "].longitude", list.get(i).getLongitude() == null ? "" : list.get(i).getLongitude());
-            map.put("gps[" + i + "].latitude", list.get(i).getLatitude() == null ? "" : list.get(i).getLatitude());
-            map.put("gps[" + i + "].gpsTime", list.get(i).getGpsTime() == null ? "" : list.get(i).getGpsTime());
-            map.put("gps[" + i + "].distance", list.get(i).getDistance() == null ? "" : list.get(i).getDistance());
+            map.put("gps[" + i + "].id", gps.getId() == null ? "" : gps.getId());
+            map.put("gps[" + i + "].holeID", gps.getHoleID() == null ? "" : gps.getHoleID());
+            map.put("gps[" + i + "].recordID", gps.getRecordID() == null ? "" : gps.getRecordID());
+            if (!TextUtils.isEmpty(gps.getMediaID())) {
+                map.put("gps[" + i + "].mediaID", gps.getMediaID());
+            }
+            if (!TextUtils.isEmpty(gps.getType())) {
+                map.put("gps[" + i + "].type", gps.getType());
+            }
+            if (!TextUtils.isEmpty(gps.getLongitude())) {
+                map.put("gps[" + i + "].longitude", gps.getLongitude());
+            }
+            if (!TextUtils.isEmpty(gps.getLatitude())) {
+                map.put("gps[" + i + "].latitude", gps.getLatitude());
+            }
+            if (!TextUtils.isEmpty(gps.getGpsTime())) {
+                map.put("gps[" + i + "].gpsTime", gps.getGpsTime());
+            }
+            if (!TextUtils.isEmpty(gps.getDistance())) {
+                map.put("gps[" + i + "].distance", gps.getDistance());
+            }
         }
         return map;
     }

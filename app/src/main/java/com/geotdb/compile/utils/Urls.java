@@ -18,7 +18,8 @@ public class Urls {
 //    public static final String SERVER_PATH = "http://www.geotdp.com:8081/";//北京
 //    public static final String SERVER_PATH = "http://www.geotdp.com/";//新疆-old
 //    public static final String SERVER_PATH = "http://115.47.116.157/";//辽宁
-//    public static final String SERVER_PATH = "http://test.geotdp.com/";//测试 老接口 有关联等
+
+    public static final String SERVER_PATH = "http://test.geotdp.com/";//测试
 //    public static final String SERVER_PATH = "http://new.geotdp.com/";//新
 
 //    public static final String SERVER_PATH = "http://192.168.1.117:80/";//王浩
@@ -27,7 +28,8 @@ public class Urls {
 //    public static final String SERVER_PATH = "http://ln.geotdp.com:8081/";//辽宁勘察
 //    public static final String SERVER_PATH = "http://xj.geotdp.com/";//新疆
 //    public static final String SERVER_PATH = "http://218.249.134.238:8082/";//新平台测试
-    public static final String SERVER_PATH = "http://bj.geotdp.com:8081/";//北京
+//    public static final String SERVER_PATH = "http://bj.geotdp.com:8081/";//北京
+//    public static final String SERVER_PATH = "http://gx.geotdp.com/";//广西
 
     // 登录请求
     public static final String LOGIN_POST = SERVER_PATH + "geotdp/compileUser/login";

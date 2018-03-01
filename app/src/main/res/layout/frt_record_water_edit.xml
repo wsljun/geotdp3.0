@@ -40,7 +40,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="8dp"
             android:background="#1E88E5"
-            android:text="更新"
+            android:text="记录时间"
             android:textColor="#ffffff"
             app:gTouchEffect="ease" />
     </LinearLayout>
@@ -79,7 +79,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="8dp"
             android:background="#1E88E5"
-            android:text="更新"
+            android:text="记录时间"
             android:textColor="#ffffff"
             app:gTouchEffect="ease" />
     </LinearLayout>
